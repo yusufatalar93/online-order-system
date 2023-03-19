@@ -2,9 +2,9 @@ package com.yusuf.online.order.system.auth;
 
 
 import com.yusuf.online.order.system.config.JwtService;
-import com.yusuf.online.order.system.user.Role;
-import com.yusuf.online.order.system.user.User;
-import com.yusuf.online.order.system.user.UserRepository;
+import com.yusuf.online.order.system.core.entity.User;
+import com.yusuf.online.order.system.core.repository.UserRepository;
+import jakarta.persistence.EntityExistsException;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -14,21 +14,24 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class AuthenticationService {
+
   private final UserRepository repository;
   private final PasswordEncoder passwordEncoder;
   private final JwtService jwtService;
   private final AuthenticationManager authenticationManager;
 
-  public AuthenticationResponse register(RegisterRequest request) {
-    var user = User.builder()
-        .firstname(request.getFirstname())
-        .lastname(request.getLastname())
+  public AuthenticationResponse registerUser(UserRegisterRequest request) {
+    if (repository.findByEmail(request.getEmail()).isPresent()) {
+      throw new EntityExistsException(
+          String.format("%s mail adresine kayıtlı bir kullanıcı mevcut!", request.getEmail()));
+    }
+    User user = User.builder()
         .email(request.getEmail())
         .password(passwordEncoder.encode(request.getPassword()))
-        .role(Role.USER)
+        .address(request.getAddress())
         .build();
-    var savedUser = repository.save(user);
-    var jwtToken = jwtService.generateToken(user);
+    repository.save(user);
+    String jwtToken = jwtService.generateToken(user);
     return AuthenticationResponse.builder()
         .token(jwtToken)
         .build();
@@ -48,8 +51,6 @@ public class AuthenticationService {
         .token(jwtToken)
         .build();
   }
-
-
 
 
 }
