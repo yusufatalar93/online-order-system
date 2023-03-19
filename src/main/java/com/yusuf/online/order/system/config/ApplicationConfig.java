@@ -1,7 +1,7 @@
 package com.yusuf.online.order.system.config;
 
 
-import com.yusuf.online.order.system.user.UserRepository;
+import com.yusuf.online.order.system.core.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

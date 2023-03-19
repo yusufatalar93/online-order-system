@@ -10,18 +10,19 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.function.Function;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 @Service
 public class JwtService {
 
-  private final String SECRET_KEY = "556A586E3272357538782F413F4428472B4B6250655368566B59703373367639";
+  @Value("${SECRET_KEY}")
+  private String SECRET_KEY;
 
   public String extractUsername(String token) {
     return extractClaim(token, Claims::getSubject);
   }
-
 
   public <T> T extractClaim(String token, Function<Claims, T> claimResolver) {
     final Claims claims = extractAllClaims(token);
@@ -47,10 +48,10 @@ public class JwtService {
 
   private boolean isTokenExpired(String token) {
 
-    return extraxtExpiration(token).before(new Date());
+    return extractExpiration(token).before(new Date());
   }
 
-  private Date extraxtExpiration(String token) {
+  private Date extractExpiration(String token) {
     return extractClaim(token, Claims::getExpiration);
   }
 

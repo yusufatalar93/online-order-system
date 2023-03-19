@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.user;
+package com.yusuf.online.order.system.core.entity;
 
 
 import jakarta.persistence.Column;
@@ -22,29 +22,24 @@ import org.springframework.security.core.userdetails.UserDetails;
 @AllArgsConstructor
 @Builder
 @Entity
-public class User implements UserDetails {
+public class User  extends BaseEntity<String> implements UserDetails {
 
   @Id
   @GeneratedValue
   @Column(name = "ID")
   private Integer id;
-  @Column(name = "FIRSTNAME")
-  private String firstname;
-  @Column(name = "LASTNAME")
-  private String lastname;
   @Column(name = "EMAIL")
   private String email;
   @Column(name = "PASSWORD")
   private String password;
 
-  @Enumerated(EnumType.STRING)
-  @Column(name = "ROLE")
-  private Role role;
+  @Column(name = "ADDRESS")
+  private String address;
 
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
-    return List.of(new SimpleGrantedAuthority(role.name()));
+    return null;
   }
 
   @Override
