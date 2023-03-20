@@ -4,11 +4,13 @@ import com.yusuf.online.order.system.core.entity.Product;
 import com.yusuf.online.order.system.core.mapper.ProductMapper;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
 import com.yusuf.online.order.system.core.model.dto.UserDTO;
+import com.yusuf.online.order.system.core.model.request.ProductListRequest;
 import com.yusuf.online.order.system.core.repository.ProductRepository;
 import com.yusuf.online.order.system.core.service.base.ProductService;
 import com.yusuf.online.order.system.core.service.base.UserService;
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -59,5 +61,12 @@ public class SimpleProductService implements ProductService {
                 currentUser.getEmail(),
                 productName)));
     repository.delete(product);
+  }
+
+  @Override
+  public List<ProductDTO> getProductsByNameAndDescription(ProductListRequest request) {
+    final List<Product> productsByNameAndDescription = repository.getProductsByNameAndDescription(
+        request.getProductName(), request.getDescription());
+    return productMapper.convertAllToDTO(productsByNameAndDescription);
   }
 }

@@ -1,10 +1,13 @@
 package com.yusuf.online.order.system.core.web.rest;
 
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
+import com.yusuf.online.order.system.core.model.request.ProductListRequest;
 import com.yusuf.online.order.system.core.service.base.ProductService;
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -33,7 +36,10 @@ public class SimpleProductController {
   public void delete(@PathVariable String productName) {
     productService.deleteByProductId(productName);
   }
-
+  @PostMapping("/{productName}/{description}")
+  public List<ProductDTO> getProductsByNameAndDescription(@RequestBody ProductListRequest request) {
+   return productService.getProductsByNameAndDescription(request);
+  }
 
 
 }
