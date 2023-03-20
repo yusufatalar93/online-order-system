@@ -1,6 +1,7 @@
 package com.yusuf.online.order.system.core.entity;
 
 
+import com.yusuf.online.order.system.core.enums.UserType;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -33,8 +34,14 @@ public class User  extends BaseEntity<String> implements UserDetails {
   @Column(name = "PASSWORD")
   private String password;
 
-  @Column(name = "ADDRESS")
+  @Column(name = "BUSINESS_NAME")
+  private String businessName;
+
+  @Column(name = "ADDRESS" ,columnDefinition = "TEXT")
   private String address;
+  @Enumerated(EnumType.STRING)
+  @Column(name = "USER_TYPE")
+  private UserType userType;
 
 
   @Override
