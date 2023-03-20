@@ -69,4 +69,13 @@ public class SimpleProductService implements ProductService {
         request.getProductName(), request.getDescription());
     return productMapper.convertAllToDTO(productsByNameAndDescription);
   }
+
+  @Override
+  public ProductDTO getProductById(Integer id) {
+    final Product product = repository.findById(id).orElseThrow(
+        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!")));
+    return productMapper.convertToDTO(product);
+  }
+
+
 }

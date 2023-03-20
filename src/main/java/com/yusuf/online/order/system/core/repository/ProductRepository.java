@@ -19,6 +19,7 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
       select p from Product p
       where (:name is null  or :name=p.name) 
       and (:description is null  or :description=p.description)
+      and p.quantity > 0
       """)
   List<Product> getProductsByNameAndDescription(@Param("name") String name,
       @Param("description") String description);
