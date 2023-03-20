@@ -10,14 +10,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/user/")
+@RequestMapping("/api/user")
 @RequiredArgsConstructor
 public class SimpleUserController {
 
   private final UserService userService;
 
 
-  @GetMapping("find-user-by-username/{username}")
+  @GetMapping("/find-user-by-username/{username}")
   public ResponseEntity<UserDTO> findUserByUserName(@PathVariable String username) {
     return ResponseEntity.ok(userService.findUserByUserName(username));
   }

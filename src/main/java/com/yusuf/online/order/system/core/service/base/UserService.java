@@ -5,4 +5,6 @@ import com.yusuf.online.order.system.core.model.dto.UserDTO;
 public interface UserService {
 
   UserDTO findUserByUserName(String username);
+
+  UserDTO getCurruntUser();
 }

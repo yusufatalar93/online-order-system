@@ -19,11 +19,11 @@ import org.springframework.data.jpa.domain.support.AuditingEntityListener;
 @Data
 @MappedSuperclass
 @EntityListeners(AuditingEntityListener.class)
-public abstract class BaseEntity<U> {
-
+public abstract class BaseEntity<U>{
+  @Column(name = "CREATED_BY", updatable = false)
   @CreatedBy
   protected U createdBy;
-
+  @Column(name = "CREATION_DATE", updatable = false)
   @CreatedDate
   @Temporal(TIMESTAMP)
   protected Date creationDate;
@@ -37,6 +37,6 @@ public abstract class BaseEntity<U> {
 
   @Version
   @Column(name = "VERSION")
-  private int version;
+  private Integer version;
 
 }
