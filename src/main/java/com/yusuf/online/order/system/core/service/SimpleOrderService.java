@@ -11,8 +11,10 @@ import com.yusuf.online.order.system.core.service.base.OrderService;
 import com.yusuf.online.order.system.core.service.base.ProductService;
 import com.yusuf.online.order.system.core.service.base.UserService;
 import jakarta.persistence.EntityNotFoundException;
+import java.time.LocalDateTime;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
@@ -24,9 +26,10 @@ public class SimpleOrderService implements OrderService {
   private final OrderRepository repository;
   private final OrderMapper orderMapper;
   private final ProductService productService;
-
-
   private final UserService userService;
+
+  @Value("${RANDOM_RATE}")
+  private Double randomRate;
 
 
   @Override
@@ -102,6 +105,23 @@ public class SimpleOrderService implements OrderService {
       throw new RuntimeException(
           String.format("Bu sipariş reddedilemez. Çünkü sipraişi statüsü %s 'dir",
               order.getOrderStatus()));
+    }
+  }
+
+
+  @Transactional
+  @Override
+  public void deliverOrdersRandomly() {
+    List<Order> createdOrders = repository.findAllByOrderStatus(OrderStatus.ACCEPTED);
+    for (Order order : createdOrders) {
+      if (order.getCreationDate().plusMinutes(2).isAfter(LocalDateTime.now())){
+        continue;
+      }
+      if(order.getCreationDate().plusMinutes(15).isBefore(LocalDateTime.now())){
+        order.setOrderStatus(OrderStatus.DELIVERED);
+      }else if (Math.random() < randomRate) {
+        order.setOrderStatus(OrderStatus.DELIVERED);
+      }
     }
   }
 

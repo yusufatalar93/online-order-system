@@ -7,7 +7,10 @@ import jakarta.persistence.EntityListeners;
 import jakarta.persistence.MappedSuperclass;
 import jakarta.persistence.Temporal;
 import jakarta.persistence.Version;
+import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.Locale;
 import lombok.Data;
 import org.springframework.data.annotation.CreatedBy;
 import org.springframework.data.annotation.CreatedDate;
@@ -26,14 +29,14 @@ public abstract class BaseEntity<U>{
   @Column(name = "CREATION_DATE", updatable = false)
   @CreatedDate
   @Temporal(TIMESTAMP)
-  protected Date creationDate;
+  protected LocalDateTime creationDate;
 
   @LastModifiedBy
   protected U lastModifiedBy;
 
   @LastModifiedDate
   @Temporal(TIMESTAMP)
-  protected Date lastModifiedDate;
+  protected LocalDateTime lastModifiedDate;
 
   @Version
   @Column(name = "VERSION")

@@ -1,5 +1,6 @@
 package com.yusuf.online.order.system.core.service.base;
 
+import com.yusuf.online.order.system.core.enums.OrderStatus;
 import com.yusuf.online.order.system.core.model.dto.OrderDTO;
 import java.util.List;
 import org.springframework.transaction.annotation.Transactional;
@@ -17,4 +18,7 @@ public interface OrderService {
 
   @Transactional
   void rejectOrder(Integer orderId);
+
+
+  void deliverOrdersRandomly();
 }
