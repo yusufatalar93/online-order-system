@@ -33,8 +33,8 @@ public class SimpleProductController {
   }
 
   @DeleteMapping("/{productId}")
-  public void delete(@PathVariable String productName) {
-    productService.deleteByProductId(productName);
+  public void delete(@PathVariable Integer productId) {
+    productService.deleteByProductId(productId);
   }
   @PostMapping("/{productName}/{description}")
   public List<ProductDTO> getProductsByNameAndDescription(@RequestBody ProductListRequest request) {

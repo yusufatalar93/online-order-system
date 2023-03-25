@@ -3,7 +3,6 @@ package com.yusuf.online.order.system.core.service;
 import com.yusuf.online.order.system.core.entity.Product;
 import com.yusuf.online.order.system.core.mapper.ProductMapper;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
-import com.yusuf.online.order.system.core.model.dto.UserDTO;
 import com.yusuf.online.order.system.core.model.request.ProductListRequest;
 import com.yusuf.online.order.system.core.repository.ProductRepository;
 import com.yusuf.online.order.system.core.service.base.ProductService;
@@ -26,13 +25,12 @@ public class SimpleProductService implements ProductService {
 
   @Override
   public ProductDTO save(ProductDTO productDTO) {
-    final String productName = productDTO.getName();
-    if (repository.existsByName(productName)) {
-      throw new EntityExistsException(
-          String.format("%s isimli ürün zaten mevcut. Sadece güncelleme yapabilirsiniz",
-              productName));
-    }
     final Integer currentUserId = userService.getCurruntUser().getId();
+    if (repository.existsByNameAndSellerId(productDTO.getName(), currentUserId)) {
+      throw new EntityExistsException(
+          String.format("%s ürünü için ürün kaydı mevcuttur. Yeni kayıt atılamaz.",
+              productDTO.getName()));
+    }
     final Product product = productMapper.convertToEntity(productDTO);
     product.setSellerId(currentUserId);
     final Product savedProduct = repository.save(product);
@@ -41,25 +39,22 @@ public class SimpleProductService implements ProductService {
 
   @Override
   public ProductDTO update(ProductDTO productDTO) {
-    final UserDTO currentUser = userService.getCurruntUser();
-    final String productName = productDTO.getName();
-    Product product = repository.findByNameAndSellerId(productName, currentUser.getId())
-        .orElseThrow(() -> new EntityNotFoundException(
-            String.format("%s'ye ait %s ürünü bulunamadığından güncelleme yapılamadı.",
-                currentUser.getEmail(), productName)));
-    productMapper.updateEntity(productDTO, product);
+    final Product product = repository.findById(productDTO.getId()).map(p -> {
+      productMapper.updateEntity(productDTO, p);
+      return p;
+    }).orElseThrow(() -> new EntityNotFoundException(
+        String.format("%s ID'ye ait ürün kaydı bulunamadığından güncelleme yapılamadı.",
+            productDTO.getId())));
     final Product savedProduct = repository.save(product);
     return productMapper.convertToDTO(savedProduct);
   }
 
   @Override
-  public void deleteByProductId(String productName) {
-    final UserDTO currentUser = userService.getCurruntUser();
-    final Product product = repository.findByNameAndSellerId(productName, currentUser.getId())
+  public void deleteByProductId(Integer id) {
+    final Product product = repository.findById(id)
         .orElseThrow(() -> new EntityNotFoundException(
-            String.format("%s 'e ait %s ürünü bulunamadığından silme işlemi gerçekleştirilemedi.",
-                currentUser.getEmail(),
-                productName)));
+            String.format(
+                "%s ID'ye ait ürün kaydı bulunamadığından silme işlemi gerçekleştirilemedi.", id)));
     repository.delete(product);
   }
 

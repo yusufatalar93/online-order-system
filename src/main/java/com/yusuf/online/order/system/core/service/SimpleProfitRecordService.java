@@ -18,11 +18,13 @@ public class SimpleProfitRecordService implements ProfitRecordService {
   private final ProfitRecordRepository repository;
 
   @Override
-  public List<ProfitRecord> calculateAndRecordSellersDailyProfit() {
+  public void calculateAndRecordSellersDailyProfit() {
     final LocalDate yesterday = LocalDate.now().minusDays(1);
     final LocalDateTime startDateTime = yesterday.atStartOfDay();
     final LocalDateTime endDateTime = yesterday.atTime(LocalTime.MAX);
-    return repository.calculateSellersProfit(startDateTime,endDateTime);
+    final List<ProfitRecord> profitRecords = repository.calculateSellersProfitByDates(startDateTime,
+        endDateTime);
+    repository.saveAll(profitRecords);
   }
 
 }

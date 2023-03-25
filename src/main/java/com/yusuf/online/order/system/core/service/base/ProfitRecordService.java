@@ -7,5 +7,5 @@ import java.util.List;
 public interface ProfitRecordService {
 
 
-  List<ProfitRecord> calculateAndRecordSellersDailyProfit();
+  void calculateAndRecordSellersDailyProfit();
 }
