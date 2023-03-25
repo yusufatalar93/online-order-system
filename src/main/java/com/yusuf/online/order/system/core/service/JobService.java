@@ -1,9 +1,8 @@
 package com.yusuf.online.order.system.core.service;
 
-import com.yusuf.online.order.system.core.enums.OrderStatus;
-import com.yusuf.online.order.system.core.model.dto.OrderDTO;
 import com.yusuf.online.order.system.core.service.base.OrderService;
-import java.util.List;
+import com.yusuf.online.order.system.core.service.base.ProfitRecordService;
+import java.time.LocalDate;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
@@ -17,9 +16,19 @@ public class JobService {
 
   private final OrderService orderService;
 
+  private final ProfitRecordService profitRecordService;
+
+
   @Scheduled(cron = "0 * * * * *")
   public void deliverOrders() {
     orderService.deliverOrdersRandomly();
 
   }
+
+  @Scheduled(cron = "0 15 0 * * *")
+  public void calculateAndRecordSellersDailyProfit() {
+    profitRecordService.calculateAndRecordSellersDailyProfit();
+  }
+
+
 }

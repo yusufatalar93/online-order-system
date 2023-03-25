@@ -6,12 +6,15 @@ import com.yusuf.online.order.system.core.mapper.OrderMapper;
 import com.yusuf.online.order.system.core.model.dto.OrderDTO;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
 import com.yusuf.online.order.system.core.model.dto.UserDTO;
+import com.yusuf.online.order.system.core.entity.ProfitRecord;
 import com.yusuf.online.order.system.core.repository.OrderRepository;
 import com.yusuf.online.order.system.core.service.base.OrderService;
 import com.yusuf.online.order.system.core.service.base.ProductService;
 import com.yusuf.online.order.system.core.service.base.UserService;
 import jakarta.persistence.EntityNotFoundException;
+import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -114,12 +117,12 @@ public class SimpleOrderService implements OrderService {
   public void deliverOrdersRandomly() {
     List<Order> createdOrders = repository.findAllByOrderStatus(OrderStatus.ACCEPTED);
     for (Order order : createdOrders) {
-      if (order.getCreationDate().plusMinutes(2).isAfter(LocalDateTime.now())){
+      if (order.getLastModifiedDate().plusMinutes(2).isAfter(LocalDateTime.now())) {
         continue;
       }
-      if(order.getCreationDate().plusMinutes(15).isBefore(LocalDateTime.now())){
+      if (order.getLastModifiedDate().plusMinutes(15).isBefore(LocalDateTime.now())) {
         order.setOrderStatus(OrderStatus.DELIVERED);
-      }else if (Math.random() < randomRate) {
+      } else if (Math.random() < randomRate) {
         order.setOrderStatus(OrderStatus.DELIVERED);
       }
     }
