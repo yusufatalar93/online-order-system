@@ -16,7 +16,7 @@ public interface ProfitRecordRepository extends JpaRepository<ProfitRecord, Inte
       select 
       u.id as seller,
       :startDateTime as  date,
-      sum(o.quantity) as profit 
+      sum(o.quantity) as total 
       from Order o
       left join Product p on o.productId = p.id
       left join User  u on p.sellerId = u.id
