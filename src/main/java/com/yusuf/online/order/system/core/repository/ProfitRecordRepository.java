@@ -12,15 +12,13 @@ public interface ProfitRecordRepository extends JpaRepository<ProfitRecord, Inte
 
   @Query(value = """
       select 
-      u.id as seller,
-      :startDateTime as  date,
-      sum(o.quantity) as total 
+      new com.yusuf.online.order.system.core.entity.ProfitRecord(u.id,sum(o.quantity))
       from Order o
       left join Product p on o.productId = p.id
       left join User  u on p.sellerId = u.id
       where o.orderStatus = 'DELIVERED'
-      and o.lastModifiedDate
-      between :startDateTime and :endDateTime
+      and (o.lastModifiedDate
+      between :startDateTime and :endDateTime)
       group by p.sellerId
       """)
   List<ProfitRecord> calculateSellersProfitByDates(@Param("startDateTime") LocalDateTime startDateTime,

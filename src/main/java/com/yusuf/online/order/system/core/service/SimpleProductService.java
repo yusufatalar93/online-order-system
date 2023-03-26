@@ -10,6 +10,7 @@ import com.yusuf.online.order.system.core.service.base.UserService;
 import jakarta.persistence.EntityExistsException;
 import jakarta.persistence.EntityNotFoundException;
 import java.util.List;
+import java.util.Objects;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -39,7 +40,12 @@ public class SimpleProductService implements ProductService {
 
   @Override
   public ProductDTO update(ProductDTO productDTO) {
+    final Integer currentUserId = userService.getCurruntUser().getId();
     final Product product = repository.findById(productDTO.getId()).map(p -> {
+      if (!Objects.equals(currentUserId, p.getSellerId())) {
+        throw new IllegalArgumentException(
+            "Güncellemek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü güncelleyebilir.");
+      }
       productMapper.updateEntity(productDTO, p);
       return p;
     }).orElseThrow(() -> new EntityNotFoundException(
@@ -51,24 +57,29 @@ public class SimpleProductService implements ProductService {
 
   @Override
   public void deleteByProductId(Integer id) {
+    final Integer currentUserId = userService.getCurruntUser().getId();
     final Product product = repository.findById(id)
         .orElseThrow(() -> new EntityNotFoundException(
             String.format(
                 "%s ID'ye ait ürün kaydı bulunamadığından silme işlemi gerçekleştirilemedi.", id)));
+    if (!Objects.equals(currentUserId, product.getSellerId())) {
+      throw new IllegalArgumentException(
+          "Silmek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü silebilir.");
+    }
     repository.delete(product);
   }
 
   @Override
   public List<ProductDTO> getProductsByNameAndDescription(ProductListRequest request) {
     final List<Product> productsByNameAndDescription = repository.getProductsByNameAndDescription(
-        request.getProductName(), request.getDescription());
+        request.getName(), request.getDescription());
     return productMapper.convertAllToDTO(productsByNameAndDescription);
   }
 
   @Override
   public ProductDTO getProductById(Integer id) {
     final Product product = repository.findById(id).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!")));
+        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!",id)));
     return productMapper.convertToDTO(product);
   }
 

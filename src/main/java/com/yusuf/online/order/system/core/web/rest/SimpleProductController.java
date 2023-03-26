@@ -3,6 +3,7 @@ package com.yusuf.online.order.system.core.web.rest;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
 import com.yusuf.online.order.system.core.model.request.ProductListRequest;
 import com.yusuf.online.order.system.core.service.base.ProductService;
+import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -24,11 +25,11 @@ public class SimpleProductController {
 
 
   @PostMapping
-  public ResponseEntity<ProductDTO> save(@RequestBody ProductDTO productDTO) {
+  public ResponseEntity<ProductDTO> save(@Valid @RequestBody ProductDTO productDTO) {
     return ResponseEntity.ok(productService.save(productDTO));
   }
   @PutMapping
-  public ResponseEntity<ProductDTO> update(@RequestBody ProductDTO productDTO) {
+  public ResponseEntity<ProductDTO> update(@Valid @RequestBody ProductDTO productDTO) {
     return ResponseEntity.ok(productService.update(productDTO));
   }
 
@@ -36,7 +37,7 @@ public class SimpleProductController {
   public void delete(@PathVariable Integer productId) {
     productService.deleteByProductId(productId);
   }
-  @PostMapping("/{productName}/{description}")
+  @PostMapping("/get-by-name-and-description")
   public List<ProductDTO> getProductsByNameAndDescription(@RequestBody ProductListRequest request) {
    return productService.getProductsByNameAndDescription(request);
   }

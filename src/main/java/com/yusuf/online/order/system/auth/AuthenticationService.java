@@ -3,8 +3,10 @@ package com.yusuf.online.order.system.auth;
 
 import com.yusuf.online.order.system.config.JwtService;
 import com.yusuf.online.order.system.core.entity.User;
+import com.yusuf.online.order.system.core.enums.UserType;
 import com.yusuf.online.order.system.core.repository.UserRepository;
 import jakarta.persistence.EntityExistsException;
+import java.util.Objects;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -24,6 +26,9 @@ public class AuthenticationService {
     if (repository.findByEmail(request.getEmail()).isPresent()) {
       throw new EntityExistsException(
           String.format("%s mail adresine kayıtlı bir kullanıcı mevcut!", request.getEmail()));
+    }
+    if (UserType.SELLER.equals(request.getUserType()) && Objects.isNull(request.getBusinessName())){
+      throw new IllegalArgumentException("Satıcı kullanıcı kayıtları için Businnes Name zorunludur!");
     }
     User user = User.builder()
         .email(request.getEmail())

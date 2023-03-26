@@ -8,6 +8,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
 import java.time.LocalDateTime;
+import java.time.LocalTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -34,5 +35,11 @@ public class ProfitRecord extends BaseEntity<String> {
   private LocalDateTime date;
   @Column(name = "TOTAL")
   private Long total;
+
+  public ProfitRecord(Integer seller, Long total) {
+    this.seller = seller;
+    this.total = total;
+  }
+
 
 }

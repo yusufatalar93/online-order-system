@@ -30,10 +30,11 @@ public abstract class BaseEntity<U>{
   @CreatedDate
   @Temporal(TIMESTAMP)
   protected LocalDateTime creationDate;
-
+  @Column(name = "LAST_MODIFIED_BY")
   @LastModifiedBy
   protected U lastModifiedBy;
 
+  @Column(name = "LAST_MODIFIED_DATE")
   @LastModifiedDate
   @Temporal(TIMESTAMP)
   protected LocalDateTime lastModifiedDate;

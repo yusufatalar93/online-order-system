@@ -7,6 +7,7 @@ import java.time.LocalDate;
 import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.util.List;
+import java.util.stream.Collectors;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -24,6 +25,7 @@ public class SimpleProfitRecordService implements ProfitRecordService {
     final LocalDateTime endDateTime = yesterday.atTime(LocalTime.MAX);
     final List<ProfitRecord> profitRecords = repository.calculateSellersProfitByDates(startDateTime,
         endDateTime);
+    profitRecords.forEach(e->e.setDate(startDateTime));
     repository.saveAll(profitRecords);
   }
 

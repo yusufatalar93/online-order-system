@@ -6,15 +6,12 @@ import com.yusuf.online.order.system.core.mapper.OrderMapper;
 import com.yusuf.online.order.system.core.model.dto.OrderDTO;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
 import com.yusuf.online.order.system.core.model.dto.UserDTO;
-import com.yusuf.online.order.system.core.entity.ProfitRecord;
 import com.yusuf.online.order.system.core.repository.OrderRepository;
 import com.yusuf.online.order.system.core.service.base.OrderService;
 import com.yusuf.online.order.system.core.service.base.ProductService;
 import com.yusuf.online.order.system.core.service.base.UserService;
 import jakarta.persistence.EntityNotFoundException;
-import java.time.LocalDate;
 import java.time.LocalDateTime;
-import java.time.LocalTime;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Value;
@@ -77,7 +74,6 @@ public class SimpleOrderService implements OrderService {
     Order order = repository.findById(orderId).orElseThrow(
         () -> new EntityNotFoundException(String.format("%s ID'ye ait sipariş bulunamadı!")));
     if (order.getOrderStatus().equals(OrderStatus.CREATED)) {
-      order.setOrderStatus(OrderStatus.ACCEPTED);
       ProductDTO product = productService.getProductById(order.getProductId());
       final long productQuantity = product.getQuantity();
       final long orderQuantity = order.getQuantity();
@@ -86,6 +82,7 @@ public class SimpleOrderService implements OrderService {
             String.format("Yeterli miktarda ürün yok. Talep edilen : %s, Mevcut : %s",
                 orderQuantity, productQuantity));
       } else {
+        order.setOrderStatus(OrderStatus.ACCEPTED);
         product.setQuantity(productQuantity - orderQuantity);
         productService.update(product);
       }
@@ -106,7 +103,7 @@ public class SimpleOrderService implements OrderService {
       repository.save(order);
     } else {
       throw new RuntimeException(
-          String.format("Bu sipariş reddedilemez. Çünkü sipraişi statüsü %s 'dir",
+          String.format("Bu sipariş reddedilemez. Çünkü sipraiş statüsü %s 'dir",
               order.getOrderStatus()));
     }
   }
@@ -115,8 +112,8 @@ public class SimpleOrderService implements OrderService {
   @Transactional
   @Override
   public void deliverOrdersRandomly() {
-    List<Order> createdOrders = repository.findAllByOrderStatus(OrderStatus.ACCEPTED);
-    for (Order order : createdOrders) {
+    List<Order> acceptedOrders = repository.findAllByOrderStatus(OrderStatus.ACCEPTED);
+    for (Order order : acceptedOrders) {
       if (order.getLastModifiedDate().plusMinutes(2).isAfter(LocalDateTime.now())) {
         continue;
       }
