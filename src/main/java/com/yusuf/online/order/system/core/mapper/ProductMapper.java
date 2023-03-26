@@ -10,7 +10,6 @@ import org.mapstruct.MappingTarget;
 public interface ProductMapper extends BaseMapper<Product, ProductDTO> {
 
   @Mapping(target = "id", ignore = true)
-  @Mapping(target = "version", ignore = true)
   @Mapping(target = "createdBy", ignore = true)
   @Mapping(target = "creationDate", ignore = true)
   @Mapping(target = "sellerId", ignore = true)

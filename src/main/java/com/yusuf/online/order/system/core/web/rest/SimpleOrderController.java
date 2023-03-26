@@ -2,6 +2,7 @@ package com.yusuf.online.order.system.core.web.rest;
 
 import com.yusuf.online.order.system.core.model.dto.OrderDTO;
 import com.yusuf.online.order.system.core.service.base.OrderService;
+import jakarta.validation.Valid;
 import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
@@ -20,7 +21,7 @@ public class SimpleOrderController {
   private final OrderService orderService;
 
   @PostMapping
-  public ResponseEntity<OrderDTO> createOrder(@RequestBody OrderDTO orderDTO) {
+  public ResponseEntity<OrderDTO> createOrder(@Valid @RequestBody OrderDTO orderDTO) {
     return ResponseEntity.ok(orderService.createOrder(orderDTO));
   }
 

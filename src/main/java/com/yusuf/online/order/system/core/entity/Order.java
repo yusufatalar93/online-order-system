@@ -7,9 +7,9 @@ import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
 import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.persistence.UniqueConstraint;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -20,10 +20,11 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @Builder
 @Entity
+@Table(name = "ORDER_")
 public class Order extends BaseEntity<String> {
 
   @Id
-  @GeneratedValue
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "ID")
   private Integer id;
   @Column(name = "productId")
@@ -32,7 +33,7 @@ public class Order extends BaseEntity<String> {
   private Long quantity;
 
   @Enumerated(EnumType.STRING)
-  @Column(name = "SELLER_ID")
+  @Column(name = "ORDER_STATUS")
   private OrderStatus orderStatus;
 
 

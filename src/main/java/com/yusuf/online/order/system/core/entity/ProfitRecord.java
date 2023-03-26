@@ -1,6 +1,5 @@
 package com.yusuf.online.order.system.core.entity;
 
-
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -8,6 +7,8 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import jakarta.persistence.UniqueConstraint;
+import java.time.LocalDateTime;
+import java.time.LocalTime;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -19,22 +20,26 @@ import lombok.NoArgsConstructor;
 @Builder
 @Entity
 @Table(uniqueConstraints={
-    @UniqueConstraint(columnNames = {"NAME", "SELLER_ID"})
+    @UniqueConstraint(columnNames = {"SELLER", "DATE"})
 })
-public class Product extends BaseEntity<String> {
+public class ProfitRecord extends BaseEntity<String> {
+
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
   @Column(name = "ID")
   private Integer id;
-  @Column(name = "NAME")
-  private String name;
-  @Column(name = "DESCRIPTION")
-  private String description;
-  @Column(name = "QUANTITY")
-  private Long quantity;
-  @Column(name = "SELLER_ID",updatable = false)
-  private Integer sellerId;
+  @Column(name = "SELLER")
+  private Integer seller;
+  @Column(name = "DATE")
+  private LocalDateTime date;
+  @Column(name = "TOTAL")
+  private Long total;
+
+  public ProfitRecord(Integer seller, Long total) {
+    this.seller = seller;
+    this.total = total;
+  }
 
 
 }

@@ -9,10 +9,7 @@ import org.springframework.data.repository.query.Param;
 
 public interface ProductRepository extends JpaRepository<Product, Integer> {
 
-
-  Optional<Product> findByNameAndSellerId(String name, Integer sellerId);
-
-  boolean existsByName(String name);
+  boolean existsByNameAndSellerId(String name,Integer sellerId);
 
 
   @Query(value = """

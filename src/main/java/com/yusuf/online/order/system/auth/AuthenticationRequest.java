@@ -1,5 +1,7 @@
 package com.yusuf.online.order.system.auth;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -11,6 +13,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class AuthenticationRequest {
 
+  @Email
   private String email;
-  String password;
+  @NotBlank
+  private String password;
 }
