@@ -12,8 +12,10 @@ import jakarta.persistence.EntityNotFoundException;
 import java.util.List;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class SimpleProductService implements ProductService {
@@ -28,13 +30,16 @@ public class SimpleProductService implements ProductService {
   public ProductDTO save(ProductDTO productDTO) {
     final Integer currentUserId = userService.getCurruntUser().getId();
     if (repository.existsByNameAndSellerId(productDTO.getName(), currentUserId)) {
-      throw new EntityExistsException(
-          String.format("%s ürünü için ürün kaydı mevcuttur. Yeni kayıt atılamaz.",
-              productDTO.getName()));
+      final String errorMessage = String.format(
+          "%s ürünü için ürün kaydı mevcuttur. Yeni kayıt atılamaz.",
+          productDTO.getName());
+      log.error("Product cannot be created. Error message : {}", errorMessage);
+      throw new EntityExistsException(errorMessage);
     }
     final Product product = productMapper.convertToEntity(productDTO);
     product.setSellerId(currentUserId);
     final Product savedProduct = repository.save(product);
+    log.info("{} - {} product  is created", savedProduct.getSellerId(), savedProduct.getName());
     return productMapper.convertToDTO(savedProduct);
   }
 
@@ -43,8 +48,10 @@ public class SimpleProductService implements ProductService {
     final Integer currentUserId = userService.getCurruntUser().getId();
     final Product product = repository.findById(productDTO.getId()).map(p -> {
       if (!Objects.equals(currentUserId, p.getSellerId())) {
-        throw new IllegalArgumentException(
-            "Güncellemek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü güncelleyebilir.");
+        final String errorMessage =
+            "Güncellemek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü güncelleyebilir.";
+        log.error("Product cannot be created.Error message : {}", errorMessage);
+        throw new IllegalArgumentException(errorMessage);
       }
       productMapper.updateEntity(productDTO, p);
       return p;
@@ -52,6 +59,7 @@ public class SimpleProductService implements ProductService {
         String.format("%s ID'ye ait ürün kaydı bulunamadığından güncelleme yapılamadı.",
             productDTO.getId())));
     final Product savedProduct = repository.save(product);
+    log.info("{} - {} product  is updated", savedProduct.getSellerId(), savedProduct.getName());
     return productMapper.convertToDTO(savedProduct);
   }
 
@@ -63,10 +71,13 @@ public class SimpleProductService implements ProductService {
             String.format(
                 "%s ID'ye ait ürün kaydı bulunamadığından silme işlemi gerçekleştirilemedi.", id)));
     if (!Objects.equals(currentUserId, product.getSellerId())) {
-      throw new IllegalArgumentException(
-          "Silmek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü silebilir.");
+
+      final String errorMessage = "Silmek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü silebilir.";
+      log.error("Product cannot be deleted. Error message : {}", errorMessage);
+      throw new IllegalArgumentException(errorMessage);
     }
     repository.delete(product);
+    log.info("{} - {} product  is deleted", product.getSellerId(), product.getName());
   }
 
   @Override
@@ -79,7 +90,7 @@ public class SimpleProductService implements ProductService {
   @Override
   public ProductDTO getProductById(Integer id) {
     final Product product = repository.findById(id).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!",id)));
+        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!", id)));
     return productMapper.convertToDTO(product);
   }
 
