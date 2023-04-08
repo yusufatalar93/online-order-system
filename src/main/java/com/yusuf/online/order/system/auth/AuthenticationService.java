@@ -8,11 +8,13 @@ import com.yusuf.online.order.system.core.repository.UserRepository;
 import jakarta.persistence.EntityExistsException;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
+@Slf4j
 @Service
 @RequiredArgsConstructor
 public class AuthenticationService {
@@ -24,11 +26,16 @@ public class AuthenticationService {
 
   public AuthenticationResponse registerUser(UserRegisterRequest request) {
     if (repository.findByEmail(request.getEmail()).isPresent()) {
-      throw new EntityExistsException(
-          String.format("%s mail adresine kayıtlı bir kullanıcı mevcut!", request.getEmail()));
+
+      final String errorMessage = String.format("%s mail adresine kayıtlı bir kullanıcı mevcut!",
+          request.getEmail());
+      log.error("User can not created. Eroor Message : {}",errorMessage);
+      throw new EntityExistsException(errorMessage);
     }
     if (UserType.SELLER.equals(request.getUserType()) && Objects.isNull(request.getBusinessName())){
-      throw new IllegalArgumentException("Satıcı kullanıcı kayıtları için Businnes Name zorunludur!");
+      final String errorMessage = "Satıcı kullanıcı kayıtları için Businnes Name zorunludur!";
+      log.error("User can not created. Eroor Message : {}",errorMessage);
+      throw new IllegalArgumentException(errorMessage);
     }
     User user = User.builder()
         .email(request.getEmail())
@@ -38,6 +45,7 @@ public class AuthenticationService {
         .businessName(request.getBusinessName())
         .build();
     repository.save(user);
+    log.info("{} user created.",request.getEmail());
     String jwtToken = jwtService.generateToken(user);
     return AuthenticationResponse.builder()
         .token(jwtToken)
@@ -54,6 +62,7 @@ public class AuthenticationService {
     User user = repository.findByEmail(request.getEmail())
         .orElseThrow();
     String jwtToken = jwtService.generateToken(user);
+    log.debug("{} is authenticated.",user.getUsername());
     return AuthenticationResponse.builder()
         .token(jwtToken)
         .build();
