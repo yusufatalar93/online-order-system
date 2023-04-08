@@ -3,6 +3,7 @@ package com.yusuf.online.order.system.core.service;
 import com.yusuf.online.order.system.core.service.base.OrderService;
 import com.yusuf.online.order.system.core.service.base.ProfitRecordService;
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Configuration;
@@ -23,15 +24,18 @@ public class JobService {
 
   @Scheduled(cron = "0 * * * * *")
   public void deliverOrders() {
-    log.info("DeliverOrderJob started");
+    log.info("DeliverOrder job started. StartTime : {}", LocalDateTime.now());
     orderService.deliverOrdersRandomly();
+    log.info("DeliverOrder job finished. EndTime : {}", LocalDateTime.now());
 
   }
 
   @Scheduled(cron = "0 15 0 * * *")
   public void calculateAndRecordSellersDailyProfit() {
-    log.info("calculateAndRecordSellersDailyProfit started");
+    log.info("calculateAndRecordSellersDailyProfit job started. StartTime : {}", LocalDateTime.now());
     profitRecordService.calculateAndRecordSellersDailyProfit();
+    log.info("calculateAndRecordSellersDailyProfit job finished. EndTime : {}", LocalDateTime.now());
+
   }
 
 
