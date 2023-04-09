@@ -12,5 +12,7 @@ spring:
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
 
+server:
+  port: 8080
 SECRET_KEY: 556A586E3272357538782F413F4428472B4B6250655368566B59703373367639
 RANDOM_RATE: 0.2
