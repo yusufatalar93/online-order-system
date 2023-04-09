@@ -1,7 +1,5 @@
 package com.yusuf.online.order.system.core.config;
 
-import jakarta.persistence.EntityExistsException;
-import jakarta.persistence.EntityNotFoundException;
 import jakarta.persistence.PersistenceException;
 import java.util.HashMap;
 import java.util.List;
@@ -16,6 +14,7 @@ import org.springframework.validation.FieldError;
 import org.springframework.web.bind.MethodArgumentNotValidException;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
+import org.springframework.web.servlet.LocaleResolver;
 
 @Configuration
 public class Config {
@@ -40,14 +39,6 @@ public class Config {
       }
       return new ResponseEntity<>(getErrorsMap(errorMap), new HttpHeaders(),
           HttpStatus.BAD_REQUEST);
-    }
-
-    @ExceptionHandler(PersistenceException.class)
-    public ResponseEntity<String> handlePersistenceException(
-        PersistenceException ex) {
-      final String  message = ex.getMessage();
-      return new ResponseEntity<>(message, new HttpHeaders(),
-          HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     @ExceptionHandler(RuntimeException.class)

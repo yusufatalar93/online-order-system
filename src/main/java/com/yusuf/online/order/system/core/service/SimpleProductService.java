@@ -1,5 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
+import com.yusuf.online.order.system.core.config.Messages;
 import com.yusuf.online.order.system.core.entity.Product;
 import com.yusuf.online.order.system.core.mapper.ProductMapper;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
@@ -13,6 +14,7 @@ import java.util.List;
 import java.util.Objects;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.i18n.LocaleContextHolder;
 import org.springframework.stereotype.Service;
 
 @Slf4j
@@ -89,8 +91,13 @@ public class SimpleProductService implements ProductService {
 
   @Override
   public ProductDTO getProductById(Integer id) {
+
     final Product product = repository.findById(id).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!", id)));
+        () -> {
+          final String messageForLocale = Messages.getMessageForLocale("product.not.found.exception",
+              LocaleContextHolder.getLocale());
+          throw new EntityNotFoundException(String.format(messageForLocale, id));
+        });
     return productMapper.convertToDTO(product);
   }
 

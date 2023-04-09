@@ -9229,3 +9229,557 @@ io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period
 2023-04-09 17:55:00,027 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T17:55:00.027503
 2023-04-09 17:56:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T17:56:00.010169
 2023-04-09 17:56:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T17:56:00.022801
+2023-04-09 17:57:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T17:57:00.003937
+2023-04-09 17:57:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T17:57:00.008449
+2023-04-09 17:58:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T17:58:00.007429
+2023-04-09 17:58:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T17:58:00.022789
+2023-04-09 17:59:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T17:59:00.003544
+2023-04-09 17:59:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T17:59:00.016422
+2023-04-09 18:00:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:00:00.007427
+2023-04-09 18:00:00,024 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:00:00.024161
+2023-04-09 18:01:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:01:00.001700
+2023-04-09 18:01:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:01:00.010727
+2023-04-09 18:02:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:02:00.005538
+2023-04-09 18:02:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:02:00.022581
+2023-04-09 18:03:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:03:00.007662
+2023-04-09 18:03:00,020 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:03:00.020696
+2023-04-09 18:04:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:04:00.005744
+2023-04-09 18:04:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:04:00.021476
+2023-04-09 18:05:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:05:00.004851
+2023-04-09 18:05:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:05:00.011750
+2023-04-09 18:06:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:06:00.007195
+2023-04-09 18:06:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:06:00.018228
+2023-04-09 18:07:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:07:00.007434
+2023-04-09 18:07:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:07:00.015931
+2023-04-09 18:08:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:08:00.005290
+2023-04-09 18:08:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:08:00.022162
+2023-04-09 18:09:00,000 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:09:00.000872
+2023-04-09 18:09:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:09:00.009261
+2023-04-09 18:10:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:10:00.005258
+2023-04-09 18:10:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:10:00.009097
+2023-04-09 18:11:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:11:00.006499
+2023-04-09 18:11:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:11:00.011485
+2023-04-09 18:12:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:12:00.012820
+2023-04-09 18:12:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:12:00.021390
+2023-04-09 18:13:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:13:00.005706
+2023-04-09 18:13:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:13:00.018404
+2023-04-09 18:14:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:14:00.003958
+2023-04-09 18:14:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:14:00.016949
+2023-04-09 18:14:59,988 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:14:59.988058
+2023-04-09 18:14:59,994 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:14:59.994412
+2023-04-09 18:15:50,053 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:15:50,054 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:15:50,057 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:15:52,317 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 31832 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:15:52,319 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:15:52,702 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:15:52,736 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:15:53,026 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:15:53,030 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:15:53,031 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:15:53,031 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:15:53,068 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:15:53,068 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 731 ms
+2023-04-09 18:15:53,269 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:15:53,421 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a1c7619
+2023-04-09 18:15:53,422 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:15:53,432 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:15:53,908 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:15:54,337 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:15:54,471 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1a5b8f77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@385ff04e, org.springframework.security.web.context.SecurityContextHolderFilter@72cbe3b6, org.springframework.security.web.header.HeaderWriterFilter@6e16fcaf, org.springframework.security.web.authentication.logout.LogoutFilter@491cceb4, com.yusuf.online.order.system.config.JwtAuthenticationFilter@1146e32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f8060ac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@660dcd17, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@42ff5c92, org.springframework.security.web.session.SessionManagementFilter@559baea1, org.springframework.security.web.access.ExceptionTranslationFilter@23591a2c, org.springframework.security.web.access.intercept.AuthorizationFilter@3af30ab8]
+2023-04-09 18:15:54,638 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:15:54,645 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:15:54,653 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.599 seconds (process running for 2.911)
+2023-04-09 18:16:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:16:00.007219
+2023-04-09 18:16:00,086 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:16:00.086265
+2023-04-09 18:16:12,529 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:16:12,529 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:16:12,530 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:17:19,634 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:17:19.634917
+2023-04-09 18:17:19,634 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s105ms).
+2023-04-09 18:17:19,642 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:17:19.642089
+2023-04-09 18:18:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:18:00.005207
+2023-04-09 18:18:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:18:00.016674
+2023-04-09 18:18:35,494 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:18:35,496 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:18:35,498 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:18:36,995 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 31895 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:18:36,996 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:18:37,357 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:18:37,388 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:18:37,661 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:18:37,665 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:18:37,666 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:18:37,666 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:18:37,702 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:18:37,702 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 688 ms
+2023-04-09 18:18:37,893 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:18:38,042 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a1c7619
+2023-04-09 18:18:38,043 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:18:38,057 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:18:38,484 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:18:38,918 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:18:39,044 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@385ff04e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42ff5c92, org.springframework.security.web.context.SecurityContextHolderFilter@7aadb5e8, org.springframework.security.web.header.HeaderWriterFilter@2680474c, org.springframework.security.web.authentication.logout.LogoutFilter@17b3b021, com.yusuf.online.order.system.config.JwtAuthenticationFilter@1146e32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@308a2eb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71390c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c9cd06e, org.springframework.security.web.session.SessionManagementFilter@6eef7af3, org.springframework.security.web.access.ExceptionTranslationFilter@431782fe, org.springframework.security.web.access.intercept.AuthorizationFilter@6453c126]
+2023-04-09 18:18:39,210 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:18:39,217 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:18:39,224 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.482 seconds (process running for 2.779)
+2023-04-09 18:19:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:19:00.004462
+2023-04-09 18:19:00,051 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:19:00.051094
+2023-04-09 18:20:00,000 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:20:00.000491
+2023-04-09 18:20:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:20:00.007494
+2023-04-09 18:21:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:21:00.005943
+2023-04-09 18:21:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:21:00.017417
+2023-04-09 18:22:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:22:00.007691
+2023-04-09 18:22:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:22:00.015491
+2023-04-09 18:22:38,522 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:22:38,522 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:22:38,523 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:23:01,138 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:23:01.138425
+2023-04-09 18:23:01,144 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:23:01.144309
+2023-04-09 18:24:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:24:00.007418
+2023-04-09 18:24:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:24:00.014609
+2023-04-09 18:25:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:25:00.007116
+2023-04-09 18:25:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:25:00.016014
+2023-04-09 18:26:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:26:00.005927
+2023-04-09 18:26:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:26:00.016879
+2023-04-09 18:27:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:27:00.005573
+2023-04-09 18:27:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:27:00.017009
+2023-04-09 18:28:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:28:00.004985
+2023-04-09 18:28:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:28:00.022647
+2023-04-09 18:29:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:29:00.004964
+2023-04-09 18:29:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:29:00.022962
+2023-04-09 18:30:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:30:00.005927
+2023-04-09 18:30:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:30:00.022305
+2023-04-09 18:31:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:31:00.004903
+2023-04-09 18:31:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:31:00.019101
+2023-04-09 18:32:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:32:00.004874
+2023-04-09 18:32:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:32:00.021952
+2023-04-09 18:33:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:33:00.005152
+2023-04-09 18:33:00,023 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:33:00.023327
+2023-04-09 18:34:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:34:00.005314
+2023-04-09 18:34:00,020 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:34:00.020654
+2023-04-09 18:35:00,002 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:35:00.002129
+2023-04-09 18:35:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:35:00.012631
+2023-04-09 18:36:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:36:00.004594
+2023-04-09 18:36:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:36:00.008328
+2023-04-09 18:37:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:37:00.005871
+2023-04-09 18:37:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:37:00.019830
+2023-04-09 18:38:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:38:00.005153
+2023-04-09 18:38:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:38:00.012954
+2023-04-09 18:38:16,262 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:38:16,263 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:38:16,266 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:38:18,545 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32404 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:38:18,546 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:38:18,942 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:38:18,974 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:38:19,266 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:38:19,270 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:38:19,271 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:38:19,271 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:38:19,309 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:38:19,310 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 743 ms
+2023-04-09 18:38:19,516 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:38:19,682 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@eebc0db
+2023-04-09 18:38:19,684 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:38:19,693 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:38:20,151 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:38:20,605 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:38:20,739 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@448861e5, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@72bd8702, org.springframework.security.web.context.SecurityContextHolderFilter@2cfd91b9, org.springframework.security.web.header.HeaderWriterFilter@377fca35, org.springframework.security.web.authentication.logout.LogoutFilter@12e1413c, com.yusuf.online.order.system.config.JwtAuthenticationFilter@6e0dec27, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@17b3b021, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@35007b7a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2620d0dc, org.springframework.security.web.session.SessionManagementFilter@74f23ecc, org.springframework.security.web.access.ExceptionTranslationFilter@6619692e, org.springframework.security.web.access.intercept.AuthorizationFilter@6fab250b]
+2023-04-09 18:38:20,958 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:38:20,965 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:38:20,972 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.715 seconds (process running for 3.032)
+2023-04-09 18:38:27,321 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:38:27,321 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:38:27,322 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:39:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:39:00.004748
+2023-04-09 18:39:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:39:00.019392
+2023-04-09 18:40:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:40:00.005522
+2023-04-09 18:40:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:40:00.013399
+2023-04-09 18:40:53,607 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:40:53,608 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:40:53,612 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:40:55,863 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32473 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:40:55,864 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:40:56,236 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:40:56,269 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:40:56,556 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:40:56,560 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:40:56,560 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:40:56,560 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:40:56,600 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:40:56,600 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 717 ms
+2023-04-09 18:40:56,805 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:40:56,960 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21d8da75
+2023-04-09 18:40:56,961 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:40:56,976 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:40:57,430 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:40:57,879 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:40:58,015 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5fb6fdb8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@43e587cd, org.springframework.security.web.context.SecurityContextHolderFilter@71390c8, org.springframework.security.web.header.HeaderWriterFilter@4b0a6c53, org.springframework.security.web.authentication.logout.LogoutFilter@74eebb25, com.yusuf.online.order.system.config.JwtAuthenticationFilter@1146e32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3f1bde96, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a8e209b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@4a9d0c6f, org.springframework.security.web.session.SessionManagementFilter@1df1bd44, org.springframework.security.web.access.ExceptionTranslationFilter@4f283b8f, org.springframework.security.web.access.intercept.AuthorizationFilter@4afad6bd]
+2023-04-09 18:40:58,188 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:40:58,195 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:40:58,203 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.628 seconds (process running for 2.976)
+2023-04-09 18:41:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:41:00.004673
+2023-04-09 18:41:00,073 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:41:00.073364
+2023-04-09 18:41:03,357 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:41:03,358 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:41:03,359 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-04-09 18:41:38,719 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:41:38,720 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:41:38,724 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:41:40,960 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32500 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:41:40,961 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:41:41,337 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:41:41,369 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:41:41,653 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:41:41,658 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:41:41,658 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:41:41,658 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:41:41,694 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:41:41,694 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 714 ms
+2023-04-09 18:41:41,899 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:41:42,059 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@484302ee
+2023-04-09 18:41:42,060 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:41:42,070 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:41:42,520 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:41:42,963 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:41:43,104 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@5c9844a4, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3beee525, org.springframework.security.web.context.SecurityContextHolderFilter@6453c126, org.springframework.security.web.header.HeaderWriterFilter@3167c0d, org.springframework.security.web.authentication.logout.LogoutFilter@3da068e8, com.yusuf.online.order.system.config.JwtAuthenticationFilter@2284058a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1a5b8f77, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4afad6bd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2324e26c, org.springframework.security.web.session.SessionManagementFilter@74eebb25, org.springframework.security.web.access.ExceptionTranslationFilter@746fda68, org.springframework.security.web.access.intercept.AuthorizationFilter@2088e339]
+2023-04-09 18:41:43,273 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:41:43,280 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:41:43,287 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.585 seconds (process running for 2.906)
+2023-04-09 18:42:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:42:00.004503
+2023-04-09 18:42:00,059 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:42:00.059428
+2023-04-09 18:43:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:43:00.007137
+2023-04-09 18:43:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:43:00.014411
+2023-04-09 18:43:56,766 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:43:56,767 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:43:56,770 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:43:59,066 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32568 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:43:59,067 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:43:59,427 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:43:59,459 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:43:59,736 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:43:59,740 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:43:59,741 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:43:59,741 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:43:59,777 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:43:59,778 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 692 ms
+2023-04-09 18:43:59,975 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:44:00,132 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f3361e9
+2023-04-09 18:44:00,133 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:44:00,143 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:44:00,588 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:44:01,022 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:44:01,157 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@711329fe, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2088e339, org.springframework.security.web.context.SecurityContextHolderFilter@13e9a2f2, org.springframework.security.web.header.HeaderWriterFilter@485996f7, org.springframework.security.web.authentication.logout.LogoutFilter@1c83652d, com.yusuf.online.order.system.config.JwtAuthenticationFilter@55ba4bff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@c1e7bea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1a5b8f77, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37c5e2e6, org.springframework.security.web.session.SessionManagementFilter@10fef3d1, org.springframework.security.web.access.ExceptionTranslationFilter@14eaab92, org.springframework.security.web.access.intercept.AuthorizationFilter@1ff9d66b]
+2023-04-09 18:44:01,312 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:44:01,324 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:44:01,332 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.514 seconds (process running for 2.825)
+2023-04-09 18:44:11,124 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:44:11,124 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:44:11,126 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-04-09 18:45:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:45:00.007394
+2023-04-09 18:45:00,032 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:45:00.032378
+2023-04-09 18:46:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:46:00.005423
+2023-04-09 18:46:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:46:00.016450
+2023-04-09 18:47:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:47:00.004758
+2023-04-09 18:47:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:47:00.012877
+2023-04-09 18:48:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:48:00.003996
+2023-04-09 18:48:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:48:00.014558
+2023-04-09 18:49:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:49:00.006356
+2023-04-09 18:49:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:49:00.015526
+2023-04-09 18:50:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:50:00.004369
+2023-04-09 18:50:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:50:00.007859
+2023-04-09 18:50:40,916 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:50:40,917 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:50:40,920 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:50:43,787 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32760 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:50:43,788 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:50:44,147 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:50:44,178 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:50:44,464 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:50:44,469 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:50:44,470 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:50:44,470 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:50:44,505 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:50:44,505 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 699 ms
+2023-04-09 18:50:44,698 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:50:44,853 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a1c7619
+2023-04-09 18:50:44,854 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:50:44,863 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:50:45,290 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:50:45,724 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:50:45,852 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3beee525, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2324e26c, org.springframework.security.web.context.SecurityContextHolderFilter@6565691a, org.springframework.security.web.header.HeaderWriterFilter@74f23ecc, org.springframework.security.web.authentication.logout.LogoutFilter@448861e5, com.yusuf.online.order.system.config.JwtAuthenticationFilter@1146e32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@385ff04e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@de0922c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@716205f9, org.springframework.security.web.session.SessionManagementFilter@c1e7bea, org.springframework.security.web.access.ExceptionTranslationFilter@77cac3b, org.springframework.security.web.access.intercept.AuthorizationFilter@37c5e2e6]
+2023-04-09 18:50:46,016 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:50:46,023 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:50:46,031 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.492 seconds (process running for 2.8)
+2023-04-09 18:50:51,705 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:50:51,706 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:50:51,707 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:51:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:51:00.004736
+2023-04-09 18:51:00,020 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:51:00.020593
+2023-04-09 18:51:51,680 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m6s725ms).
+2023-04-09 18:52:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:52:00.004911
+2023-04-09 18:52:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:52:00.015796
+2023-04-09 18:53:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:53:00.004899
+2023-04-09 18:53:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:53:00.010932
+2023-04-09 18:53:03,786 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:53:03,787 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:53:03,790 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:53:06,186 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32837 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:53:06,187 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:53:06,570 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:53:06,603 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:53:06,900 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:53:06,906 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:53:06,906 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:53:06,906 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:53:06,950 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:53:06,951 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 746 ms
+2023-04-09 18:53:07,184 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:53:07,348 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c28f97e
+2023-04-09 18:53:07,349 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:53:07,360 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:53:07,822 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:53:08,267 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:53:08,410 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@62509b77, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@400c0d26, org.springframework.security.web.context.SecurityContextHolderFilter@7b80be13, org.springframework.security.web.header.HeaderWriterFilter@559baea1, org.springframework.security.web.authentication.logout.LogoutFilter@1a5b8f77, com.yusuf.online.order.system.config.JwtAuthenticationFilter@46ae897c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1b316cac, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@765d2d4d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@1b261005, org.springframework.security.web.session.SessionManagementFilter@3f1bde96, org.springframework.security.web.access.ExceptionTranslationFilter@2d95c3ef, org.springframework.security.web.access.intercept.AuthorizationFilter@4a9d0c6f]
+2023-04-09 18:53:08,575 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:53:08,582 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:53:08,590 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.66 seconds (process running for 2.973)
+2023-04-09 18:53:17,697 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:53:17,698 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:53:17,699 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-04-09 18:53:42,375 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:53:42,376 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:53:42,379 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:53:44,935 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32858 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:53:44,936 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:53:45,308 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:53:45,340 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:53:45,633 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:53:45,638 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:53:45,638 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:53:45,638 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:53:45,675 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:53:45,675 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 719 ms
+2023-04-09 18:53:45,872 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:53:46,028 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5a1c7619
+2023-04-09 18:53:46,029 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:53:46,038 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:53:46,488 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:53:46,935 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:53:47,081 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@385ff04e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42ff5c92, org.springframework.security.web.context.SecurityContextHolderFilter@7aadb5e8, org.springframework.security.web.header.HeaderWriterFilter@2680474c, org.springframework.security.web.authentication.logout.LogoutFilter@17b3b021, com.yusuf.online.order.system.config.JwtAuthenticationFilter@1146e32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@308a2eb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71390c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c9cd06e, org.springframework.security.web.session.SessionManagementFilter@6eef7af3, org.springframework.security.web.access.ExceptionTranslationFilter@431782fe, org.springframework.security.web.access.intercept.AuthorizationFilter@6453c126]
+2023-04-09 18:53:47,269 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:53:47,276 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:53:47,284 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.605 seconds (process running for 2.916)
+2023-04-09 18:53:52,804 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:53:52,804 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:53:52,805 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:54:03,976 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:54:03.976034
+2023-04-09 18:54:03,993 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:54:03.993018
+2023-04-09 18:55:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:55:00.005049
+2023-04-09 18:55:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:55:00.009522
+2023-04-09 18:55:06,651 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:55:06,652 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:55:06,655 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:55:08,831 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32898 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:55:08,833 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:55:09,208 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:55:09,240 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:55:09,533 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:55:09,538 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:55:09,539 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:55:09,539 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:55:09,578 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:55:09,578 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 727 ms
+2023-04-09 18:55:09,778 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:55:09,936 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21d8da75
+2023-04-09 18:55:09,937 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:55:09,946 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:55:10,380 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:55:10,820 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:55:10,948 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1b261005, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@339de67e, org.springframework.security.web.context.SecurityContextHolderFilter@1b316cac, org.springframework.security.web.header.HeaderWriterFilter@6de6467a, org.springframework.security.web.authentication.logout.LogoutFilter@42ff5c92, com.yusuf.online.order.system.config.JwtAuthenticationFilter@4cd7128, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@df80af2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7a9df9b2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@55704859, org.springframework.security.web.session.SessionManagementFilter@2cf88ae1, org.springframework.security.web.access.ExceptionTranslationFilter@559baea1, org.springframework.security.web.access.intercept.AuthorizationFilter@de4bee9]
+2023-04-09 18:55:11,119 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:55:11,130 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:55:11,138 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.563 seconds (process running for 2.905)
+2023-04-09 18:55:16,348 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:55:16,349 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:55:16,350 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:56:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:56:00.004854
+2023-04-09 18:56:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:56:00.013810
+2023-04-09 18:56:39,194 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:56:39,195 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 18:56:39,199 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 18:56:41,488 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 32936 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 18:56:41,489 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 18:56:41,864 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 18:56:41,896 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-09 18:56:42,181 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 18:56:42,186 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:56:42,186 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 18:56:42,187 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 18:56:42,222 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 18:56:42,223 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 715 ms
+2023-04-09 18:56:42,422 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 18:56:42,579 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1f3361e9
+2023-04-09 18:56:42,580 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 18:56:42,590 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 18:56:43,040 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 18:56:43,502 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 18:56:43,629 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@385ff04e, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@42ff5c92, org.springframework.security.web.context.SecurityContextHolderFilter@7aadb5e8, org.springframework.security.web.header.HeaderWriterFilter@2680474c, org.springframework.security.web.authentication.logout.LogoutFilter@17b3b021, com.yusuf.online.order.system.config.JwtAuthenticationFilter@55ba4bff, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@308a2eb0, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71390c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@c9cd06e, org.springframework.security.web.session.SessionManagementFilter@6eef7af3, org.springframework.security.web.access.ExceptionTranslationFilter@431782fe, org.springframework.security.web.access.intercept.AuthorizationFilter@6453c126]
+2023-04-09 18:56:43,799 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 18:56:43,806 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 18:56:43,814 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.583 seconds (process running for 2.896)
+2023-04-09 18:56:46,896 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 18:56:46,896 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 18:56:46,897 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 18:57:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:57:00.004458
+2023-04-09 18:57:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:57:00.011215
+2023-04-09 18:58:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:58:00.005076
+2023-04-09 18:58:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:58:00.010751
+2023-04-09 18:59:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T18:59:00.004534
+2023-04-09 18:59:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T18:59:00.008193
+2023-04-09 19:00:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:00:00.005815
+2023-04-09 19:00:00,023 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:00:00.023245
+2023-04-09 19:01:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:01:00.001485
+2023-04-09 19:01:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:01:00.013613
+2023-04-09 19:02:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:02:00.004235
+2023-04-09 19:02:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:02:00.007188
+2023-04-09 19:03:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:03:00.005540
+2023-04-09 19:03:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:03:00.014525
+2023-04-09 19:04:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:04:00.004293
+2023-04-09 19:04:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:04:00.011930
+2023-04-09 19:05:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:05:00.004918
+2023-04-09 19:05:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:05:00.014807
+2023-04-09 19:06:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:06:00.005026
+2023-04-09 19:06:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:06:00.012470
+2023-04-09 19:07:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:07:00.004810
+2023-04-09 19:07:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:07:00.019340
+2023-04-09 19:08:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:08:00.005838
+2023-04-09 19:08:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:08:00.017924
+2023-04-09 19:09:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:09:00.004865
+2023-04-09 19:09:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:09:00.014015
+2023-04-09 19:10:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:10:00.005093
+2023-04-09 19:10:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:10:00.014899
+2023-04-09 19:11:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:11:00.004936
+2023-04-09 19:11:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:11:00.014691
+2023-04-09 19:12:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:12:00.005014
+2023-04-09 19:12:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:12:00.016114
+2023-04-09 19:13:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:13:00.005011
+2023-04-09 19:13:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:13:00.011366
+2023-04-09 19:14:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:14:00.005778
+2023-04-09 19:14:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:14:00.018880
+2023-04-09 19:15:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:15:00.009820
+2023-04-09 19:15:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:15:00.022513
+2023-04-09 19:16:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:16:00.009822
+2023-04-09 19:16:00,024 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:16:00.024103
+2023-04-09 19:17:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:17:00.008299
+2023-04-09 19:17:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:17:00.016871
+2023-04-09 19:18:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:18:00.009811
+2023-04-09 19:18:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:18:00.019979
+2023-04-09 19:19:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:19:00.009958
+2023-04-09 19:19:00,024 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:19:00.024295
+2023-04-09 19:20:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:20:00.003214
+2023-04-09 19:20:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:20:00.007582
+2023-04-09 19:21:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:21:00.010320
+2023-04-09 19:21:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:21:00.017739
+2023-04-09 19:22:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:22:00.009643
+2023-04-09 19:22:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:22:00.021376
+2023-04-09 19:23:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:23:00.004209
+2023-04-09 19:23:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:23:00.009838
+2023-04-09 19:24:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:24:00.004968
+2023-04-09 19:24:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:24:00.015845
+2023-04-09 19:25:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:25:00.004934
+2023-04-09 19:25:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:25:00.011162
+2023-04-09 19:26:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:26:00.008124
+2023-04-09 19:26:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:26:00.017850
+2023-04-09 19:27:00,002 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:27:00.002209
+2023-04-09 19:27:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:27:00.008964
+2023-04-09 19:28:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:28:00.006214
+2023-04-09 19:28:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:28:00.018133
+2023-04-09 19:28:11,204 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 19:28:11,205 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 19:28:11,208 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 19:28:13,613 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 33739 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 19:28:13,614 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 19:28:13,986 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 19:28:14,019 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-09 19:28:14,304 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 19:28:14,308 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 19:28:14,309 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 19:28:14,309 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 19:28:14,346 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 19:28:14,346 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 714 ms
+2023-04-09 19:28:14,547 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 19:28:14,703 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@21d8da75
+2023-04-09 19:28:14,704 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 19:28:14,714 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 19:28:15,161 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 19:28:15,605 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 19:28:15,737 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3beee525, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2324e26c, org.springframework.security.web.context.SecurityContextHolderFilter@6565691a, org.springframework.security.web.header.HeaderWriterFilter@74f23ecc, org.springframework.security.web.authentication.logout.LogoutFilter@448861e5, com.yusuf.online.order.system.config.JwtAuthenticationFilter@1146e32e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@385ff04e, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@de0922c, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@716205f9, org.springframework.security.web.session.SessionManagementFilter@c1e7bea, org.springframework.security.web.access.ExceptionTranslationFilter@77cac3b, org.springframework.security.web.access.intercept.AuthorizationFilter@37c5e2e6]
+2023-04-09 19:28:15,904 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 19:28:15,911 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 19:28:15,918 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.562 seconds (process running for 2.874)
+2023-04-09 19:28:33,679 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 19:28:33,680 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 19:28:33,683 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 19:28:35,200 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 33751 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 19:28:35,201 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 19:28:35,624 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 19:28:35,658 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2023-04-09 19:28:35,947 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 19:28:35,951 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 19:28:35,952 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 19:28:35,952 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 19:28:35,989 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 19:28:35,990 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 771 ms
+2023-04-09 19:28:36,187 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 19:28:36,345 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ebc5be6
+2023-04-09 19:28:36,346 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 19:28:36,355 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 19:28:36,790 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 19:28:37,233 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 19:28:37,368 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@74eebb25, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c1e7bea, org.springframework.security.web.context.SecurityContextHolderFilter@2d95c3ef, org.springframework.security.web.header.HeaderWriterFilter@33fa6a8b, org.springframework.security.web.authentication.logout.LogoutFilter@3167c0d, com.yusuf.online.order.system.config.JwtAuthenticationFilter@3857c5d5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@559baea1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7aadb5e8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3af30ab8, org.springframework.security.web.session.SessionManagementFilter@4b0a6c53, org.springframework.security.web.access.ExceptionTranslationFilter@49a6b730, org.springframework.security.web.access.intercept.AuthorizationFilter@3fb8e614]
+2023-04-09 19:28:37,534 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 19:28:37,541 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 19:28:37,550 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.609 seconds (process running for 2.944)
+2023-04-09 19:28:40,478 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 19:28:40,478 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-09 19:28:40,479 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-04-09 19:28:51,642 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 19:28:51,643 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 19:28:51,646 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 19:28:53,923 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 33764 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 19:28:53,924 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 19:28:54,344 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 19:28:54,379 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 30 ms. Found 4 JPA repository interfaces.
+2023-04-09 19:28:54,659 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 19:28:54,664 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 19:28:54,664 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 19:28:54,664 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 19:28:54,700 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 19:28:54,701 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 755 ms
+2023-04-09 19:28:54,897 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 19:28:55,052 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4e647f39
+2023-04-09 19:28:55,053 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 19:28:55,062 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 19:28:55,497 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 19:28:55,936 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 19:28:56,063 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3af30ab8, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6453c126, org.springframework.security.web.context.SecurityContextHolderFilter@559baea1, org.springframework.security.web.header.HeaderWriterFilter@2d5cb059, org.springframework.security.web.authentication.logout.LogoutFilter@7ec416a0, com.yusuf.online.order.system.config.JwtAuthenticationFilter@2284058a, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6de6467a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@308a2eb0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6565691a, org.springframework.security.web.session.SessionManagementFilter@1bc41170, org.springframework.security.web.access.ExceptionTranslationFilter@33fa6a8b, org.springframework.security.web.access.intercept.AuthorizationFilter@13e9a2f2]
+2023-04-09 19:28:56,228 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 19:28:56,235 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 19:28:56,243 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.59 seconds (process running for 2.896)
+2023-04-09 19:29:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:29:00.005469
+2023-04-09 19:29:00,085 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:29:00.085488
+2023-04-09 19:29:14,845 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 19:29:14,845 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-09 19:29:14,846 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-09 19:30:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:30:00.006951
+2023-04-09 19:30:00,038 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:30:00.037995
+2023-04-09 19:31:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:31:00.007826
+2023-04-09 19:31:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:31:00.016351
+2023-04-09 19:31:59,973 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:31:59.973795
+2023-04-09 19:31:59,982 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:31:59.982091
+2023-04-09 19:33:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:33:00.004640
+2023-04-09 19:33:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:33:00.013380
+2023-04-09 19:34:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:34:00.005027
+2023-04-09 19:34:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:34:00.012725
