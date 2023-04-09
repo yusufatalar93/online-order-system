@@ -78,3 +78,163 @@
 2023-04-10 00:37:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:37:00.007394
 2023-04-10 00:38:00,000 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:38:00.000548
 2023-04-10 00:38:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:38:00.004287
+2023-04-10 00:38:57,393 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 00:38:57,394 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-10 00:38:57,397 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-10 00:38:59,846 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 37243 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-10 00:38:59,848 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-10 00:39:00,227 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 00:39:00,262 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 31 ms. Found 4 JPA repository interfaces.
+2023-04-10 00:39:00,547 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-10 00:39:00,551 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-10 00:39:00,552 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-10 00:39:00,552 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-10 00:39:00,588 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-10 00:39:00,588 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 722 ms
+2023-04-10 00:39:00,792 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-10 00:39:00,948 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7ebc5be6
+2023-04-10 00:39:00,954 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-10 00:39:00,964 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-10 00:39:01,426 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 00:39:01,891 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 00:39:02,020 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@77cac3b, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3167c0d, org.springframework.security.web.context.SecurityContextHolderFilter@2d5cb059, org.springframework.security.web.header.HeaderWriterFilter@1a6864f0, org.springframework.security.web.authentication.logout.LogoutFilter@6619692e, com.yusuf.online.order.system.config.JwtAuthenticationFilter@68aa1164, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@431782fe, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@329cdafa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@74f23ecc, org.springframework.security.web.session.SessionManagementFilter@6dac64ea, org.springframework.security.web.access.ExceptionTranslationFilter@6c720765, org.springframework.security.web.access.intercept.AuthorizationFilter@485996f7]
+2023-04-10 00:39:02,183 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-10 00:39:02,190 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 00:39:02,197 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.607 seconds (process running for 2.921)
+2023-04-10 00:40:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:40:00.007183
+2023-04-10 00:40:00,095 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:40:00.095825
+2023-04-10 00:41:00,002 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:41:00.002076
+2023-04-10 00:41:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:41:00.019919
+2023-04-10 00:42:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:42:00.000047
+2023-04-10 00:42:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:42:00.013348
+2023-04-10 00:43:00,002 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:43:00.002937
+2023-04-10 00:43:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:43:00.010070
+2023-04-10 00:43:51,809 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 00:43:51,809 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-10 00:43:51,810 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 1 ms
+2023-04-10 00:43:51,895 ERROR c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-2] An error occurred while creating the user. Error Message : There is a registered user at zafer@gmail.com e-mail address!
+2023-04-10 00:43:52,021 ERROR c.y.o.o.s.c.ApplicationConfig [http-nio-8080-exec-4] An error occurred while getting user by username. Error message : user has zefer@gmail.com username can not found.
+2023-04-10 00:44:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:44:00.007783
+2023-04-10 00:44:00,028 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:44:00.028928
+2023-04-10 00:45:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:45:00.005407
+2023-04-10 00:45:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:45:00.012398
+2023-04-10 00:46:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:46:00.001333
+2023-04-10 00:46:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:46:00.009361
+2023-04-10 00:47:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:47:00.006094
+2023-04-10 00:47:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:47:00.017909
+2023-04-10 00:47:09,022 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-5] zafer@gmail.com user created.
+2023-04-10 00:47:09,062 ERROR c.y.o.o.s.c.ApplicationConfig [http-nio-8080-exec-7] An error occurred while getting user by username. Error message : user has zefer@gmail.com username can not found.
+2023-04-10 00:48:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:48:00.005053
+2023-04-10 00:48:00,023 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:48:00.023183
+2023-04-10 00:49:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:49:00.006567
+2023-04-10 00:49:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:49:00.015787
+2023-04-10 00:49:19,859 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 00:49:19,860 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-10 00:49:19,863 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-10 00:49:21,413 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 37511 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-10 00:49:21,414 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-10 00:49:21,789 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 00:49:21,821 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 28 ms. Found 4 JPA repository interfaces.
+2023-04-10 00:49:22,104 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-10 00:49:22,109 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-10 00:49:22,109 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-10 00:49:22,109 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-10 00:49:22,145 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-10 00:49:22,146 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 714 ms
+2023-04-10 00:49:22,345 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-10 00:49:22,500 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c2cdc67
+2023-04-10 00:49:22,501 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-10 00:49:22,511 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-10 00:49:22,964 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 00:49:23,395 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 00:49:23,533 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@de0922c, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@35c344ce, org.springframework.security.web.context.SecurityContextHolderFilter@ae449e7, org.springframework.security.web.header.HeaderWriterFilter@4f283b8f, org.springframework.security.web.authentication.logout.LogoutFilter@35007b7a, com.yusuf.online.order.system.config.JwtAuthenticationFilter@5cf39df6, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@71390c8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2cf88ae1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5fb6fdb8, org.springframework.security.web.session.SessionManagementFilter@6f8060ac, org.springframework.security.web.access.ExceptionTranslationFilter@329cdafa, org.springframework.security.web.access.intercept.AuthorizationFilter@42ff5c92]
+2023-04-10 00:49:23,701 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-10 00:49:23,708 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 00:49:23,715 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.578 seconds (process running for 2.925)
+2023-04-10 00:49:36,889 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 00:49:36,890 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-10 00:49:36,891 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 1 ms
+2023-04-10 00:49:37,136 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-1] zafer@gmail.com user created.
+2023-04-10 00:49:37,278 ERROR c.y.o.o.s.c.ApplicationConfig [http-nio-8080-exec-3] An error occurred while getting user by username. Error message : user has zefer@gmail.com username can not found.
+2023-04-10 00:50:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:50:00.006015
+2023-04-10 00:50:00,028 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:50:00.028301
+2023-04-10 00:50:21,091 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-4] zafer@gmail.com user created.
+2023-04-10 00:50:21,206 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-6] zafer@gmail.com is authenticated.
+2023-04-10 00:50:21,265 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-7] 27 - ev product  is created
+2023-04-10 00:50:21,290 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-8] 27 - araba product  is created
+2023-04-10 00:50:21,321 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-9] 27 - bilgisayar product  is created
+2023-04-10 00:50:21,375 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-2] 27 - telefon product  is updated
+2023-04-10 00:50:21,418 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-3] 27 - telefon product  is deleted
+2023-04-10 00:50:21,543 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-4] osman@gmail.com user created.
+2023-04-10 00:50:21,648 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-7] osman@gmail.com is authenticated.
+2023-04-10 00:50:21,673 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] Order with 62 id is created
+2023-04-10 00:50:21,697 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-9] 27 - ev product  is updated
+2023-04-10 00:50:21,697 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-9] Order with 62 id is accepted
+2023-04-10 00:50:21,718 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-10] An error occurred while rejecting the order. Error message This order cannot be rejected. Because the order status is ACCEPTED
+2023-04-10 00:50:21,739 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-1] An error occurred while canceling the order. Error message This order cannot be cancelled. Because the order status is ACCEPTED
+2023-04-10 00:50:21,762 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] Order with 63 id is created
+2023-04-10 00:50:21,779 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-6] Order with 63 id is rejected
+2023-04-10 00:50:21,800 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-4] An error occurred while accepting the order. Error message This order cannot be accepted. Because the order status is REJECTED
+2023-04-10 00:50:21,823 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] An error occurred while canceling the order. Error message This order cannot be cancelled. Because the order status is REJECTED
+2023-04-10 00:50:21,848 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-10] Order with 64 id is created
+2023-04-10 00:50:21,871 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-2] Order with 64 id is cancelled
+2023-04-10 00:50:21,891 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-1] An error occurred while rejecting the order. Error message This order cannot be rejected. Because the order status is CANCELLED
+2023-04-10 00:50:21,913 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] An error occurred while accepting the order. Error message This order cannot be accepted. Because the order status is CANCELLED
+2023-04-10 00:51:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:51:00.005186
+2023-04-10 00:51:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:51:00.021320
+2023-04-10 00:52:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:52:00.001357
+2023-04-10 00:52:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:52:00.010644
+2023-04-10 00:53:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:53:00.005989
+2023-04-10 00:53:00,025 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:53:00.025741
+2023-04-10 00:53:28,193 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-1] zafer@gmail.com user created.
+2023-04-10 00:53:28,305 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-5] zafer@gmail.com is authenticated.
+2023-04-10 00:53:28,327 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-6] 29 - ev product  is created
+2023-04-10 00:53:28,350 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-4] 29 - araba product  is created
+2023-04-10 00:53:28,370 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-7] 29 - bilgisayar product  is created
+2023-04-10 00:53:28,411 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-9] 29 - telefon product  is updated
+2023-04-10 00:53:28,452 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-2] 29 - telefon product  is deleted
+2023-04-10 00:53:28,576 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-5] osman@gmail.com user created.
+2023-04-10 00:53:28,679 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-6] osman@gmail.com is authenticated.
+2023-04-10 00:53:28,697 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-4] Order with 65 id is created
+2023-04-10 00:53:28,716 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-7] 29 - ev product  is updated
+2023-04-10 00:53:28,717 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-7] Order with 65 id is accepted
+2023-04-10 00:53:28,734 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] An error occurred while rejecting the order. Error message This order cannot be rejected. Because the order status is ACCEPTED
+2023-04-10 00:53:28,753 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-10] An error occurred while canceling the order. Error message This order cannot be cancelled. Because the order status is ACCEPTED
+2023-04-10 00:53:28,775 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-3] Order with 66 id is created
+2023-04-10 00:53:28,793 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-1] Order with 66 id is rejected
+2023-04-10 00:53:28,813 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] An error occurred while accepting the order. Error message This order cannot be accepted. Because the order status is REJECTED
+2023-04-10 00:53:28,831 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-4] An error occurred while canceling the order. Error message This order cannot be cancelled. Because the order status is REJECTED
+2023-04-10 00:53:28,850 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] Order with 67 id is created
+2023-04-10 00:53:28,871 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-9] Order with 67 id is cancelled
+2023-04-10 00:53:28,889 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-10] An error occurred while rejecting the order. Error message This order cannot be rejected. Because the order status is CANCELLED
+2023-04-10 00:53:28,906 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-3] An error occurred while accepting the order. Error message This order cannot be accepted. Because the order status is CANCELLED
+2023-04-10 00:54:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:54:00.003586
+2023-04-10 00:54:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:54:00.013366
+2023-04-10 00:55:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:55:00.003361
+2023-04-10 00:55:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:55:00.006578
+2023-04-10 00:56:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:56:00.005219
+2023-04-10 00:56:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:56:00.013611
+2023-04-10 00:56:00,118 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-10] zafer@gmail.com user created.
+2023-04-10 00:56:00,233 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-3] zafer@gmail.com is authenticated.
+2023-04-10 00:56:00,257 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-1] 31 - ev product  is created
+2023-04-10 00:56:00,279 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-5] 31 - araba product  is created
+2023-04-10 00:56:00,302 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-6] 31 - bilgisayar product  is created
+2023-04-10 00:56:00,346 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-7] 31 - telefon product  is updated
+2023-04-10 00:56:00,390 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-9] 31 - telefon product  is deleted
+2023-04-10 00:56:00,517 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-3] osman@gmail.com user created.
+2023-04-10 00:56:00,621 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-1] osman@gmail.com is authenticated.
+2023-04-10 00:56:00,642 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] Order with 68 id is created
+2023-04-10 00:56:00,663 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-6] 31 - ev product  is updated
+2023-04-10 00:56:00,663 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-6] Order with 68 id is accepted
+2023-04-10 00:56:00,682 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-4] An error occurred while rejecting the order. Error message Bu sipari? reddedilemez. Çünkü siprai?i statüsü ACCEPTED 'dir.
+2023-04-10 00:56:00,701 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] An error occurred while canceling the order. Error message Bu sipari? iptal edilemez. Çünkü siprai?i statüsü ACCEPTED 'dir.
+2023-04-10 00:56:00,720 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-9] Order with 69 id is created
+2023-04-10 00:56:00,737 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-10] Order with 69 id is rejected
+2023-04-10 00:56:00,757 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-3] An error occurred while accepting the order. Error message This order cannot be accepted. Because the order status is REJECTED
+2023-04-10 00:56:00,775 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] An error occurred while canceling the order. Error message This order cannot be cancelled. Because the order status is REJECTED
+2023-04-10 00:56:00,793 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-4] Order with 70 id is created
+2023-04-10 00:56:00,818 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-7] Order with 70 id is cancelled
+2023-04-10 00:56:00,834 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] An error occurred while rejecting the order. Error message This order cannot be rejected. Because the order status is CANCELLED
+2023-04-10 00:56:00,853 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-9] An error occurred while accepting the order. Error message Bu sipari? kabul edilemez. Çünkü siprai?i statüsü CANCELLED 'dir.
+2023-04-10 00:57:00,031 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:57:00.031474
+2023-04-10 00:57:00,038 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:57:00.038463
