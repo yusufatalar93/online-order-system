@@ -1,5 +1,8 @@
 package com.yusuf.online.order.system.core.config;
 
+import jakarta.persistence.EntityExistsException;
+import jakarta.persistence.EntityNotFoundException;
+import jakarta.persistence.PersistenceException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -37,6 +40,22 @@ public class Config {
       }
       return new ResponseEntity<>(getErrorsMap(errorMap), new HttpHeaders(),
           HttpStatus.BAD_REQUEST);
+    }
+
+    @ExceptionHandler(PersistenceException.class)
+    public ResponseEntity<String> handlePersistenceException(
+        PersistenceException ex) {
+      final String  message = ex.getMessage();
+      return new ResponseEntity<>(message, new HttpHeaders(),
+          HttpStatus.INTERNAL_SERVER_ERROR);
+    }
+
+    @ExceptionHandler(RuntimeException.class)
+    public ResponseEntity<String> handleRuntimeException(
+        RuntimeException ex) {
+      final String  message = ex.getMessage();
+      return new ResponseEntity<>(message, new HttpHeaders(),
+          HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
     private Map<String, Map<String, String>> getErrorsMap(Map<String, String> errors) {
