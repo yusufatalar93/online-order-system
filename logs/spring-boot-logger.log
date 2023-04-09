@@ -9783,3 +9783,160 @@ io.jsonwebtoken.MalformedJwtException: JWT strings must contain exactly 2 period
 2023-04-09 19:33:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:33:00.013380
 2023-04-09 19:34:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:34:00.005027
 2023-04-09 19:34:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:34:00.012725
+2023-04-09 19:35:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:35:00.006230
+2023-04-09 19:35:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:35:00.015
+2023-04-09 19:36:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:36:00.005083
+2023-04-09 19:36:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:36:00.013537
+2023-04-09 19:37:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:37:00.005174
+2023-04-09 19:37:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:37:00.017030
+2023-04-09 19:38:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:38:00.004798
+2023-04-09 19:38:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:38:00.013869
+2023-04-09 19:39:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:39:00.004874
+2023-04-09 19:39:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:39:00.014489
+2023-04-09 19:40:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:40:00.004421
+2023-04-09 19:40:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:40:00.018032
+2023-04-09 19:41:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:41:00.009561
+2023-04-09 19:41:00,023 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:41:00.023386
+2023-04-09 19:42:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:42:00.012038
+2023-04-09 19:42:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:42:00.022066
+2023-04-09 19:43:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:43:00.009295
+2023-04-09 19:43:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:43:00.022236
+2023-04-09 19:44:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:44:00.009930
+2023-04-09 19:44:00,027 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:44:00.027225
+2023-04-09 19:45:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:45:00.009255
+2023-04-09 19:45:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:45:00.017404
+2023-04-09 19:46:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:46:00.007710
+2023-04-09 19:46:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:46:00.014560
+2023-04-09 19:46:59,985 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:46:59.985956
+2023-04-09 19:46:59,990 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:46:59.990218
+2023-04-09 19:48:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:48:00.008505
+2023-04-09 19:48:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:48:00.019943
+2023-04-09 19:49:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:49:00.009178
+2023-04-09 19:49:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:49:00.021204
+2023-04-09 19:50:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:50:00.009450
+2023-04-09 19:50:00,022 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:50:00.022355
+2023-04-09 19:51:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:51:00.008312
+2023-04-09 19:51:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:51:00.021623
+2023-04-09 19:52:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:52:00.009006
+2023-04-09 19:52:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:52:00.021508
+2023-04-09 19:53:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:53:00.009749
+2023-04-09 19:53:00,024 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:53:00.024216
+2023-04-09 19:54:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:54:00.009869
+2023-04-09 19:54:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:54:00.018645
+2023-04-09 19:55:00,002 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:55:00.002102
+2023-04-09 19:55:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:55:00.010133
+2023-04-09 19:56:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:56:00.009362
+2023-04-09 19:56:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:56:00.018653
+2023-04-09 19:57:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:57:00.009304
+2023-04-09 19:57:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:57:00.021080
+2023-04-09 19:58:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:58:00.009785
+2023-04-09 19:58:00,027 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:58:00.027791
+2023-04-09 19:59:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T19:59:00.009203
+2023-04-09 19:59:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T19:59:00.017728
+2023-04-09 20:00:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T20:00:00.009142
+2023-04-09 20:00:00,023 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T20:00:00.023670
+2023-04-09 20:01:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T20:01:00.009855
+2023-04-09 20:01:00,023 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T20:01:00.023517
+2023-04-09 20:02:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T20:02:00.006804
+2023-04-09 20:02:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T20:02:00.015803
+2023-04-09 20:03:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T20:03:00.008437
+2023-04-09 20:03:00,020 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T20:03:00.020616
+2023-04-09 20:04:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T20:04:00.009441
+2023-04-09 20:04:00,020 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T20:04:00.020676
+2023-04-09 20:05:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T20:05:00.009243
+2023-04-09 20:05:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T20:05:00.019188
+2023-04-09 20:28:34,612 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=23m9s62ms).
+2023-04-09 21:22:28,218 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T21:22:28.218057
+2023-04-09 21:22:28,226 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T21:22:28.226803
+2023-04-09 23:14:27,963 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=2h45m53s351ms).
+2023-04-09 23:25:34,877 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:25:34.877243
+2023-04-09 23:25:34,886 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:25:34.886642
+2023-04-09 23:25:58,675 WARN c.z.h.p.HikariPool$HouseKeeper [HikariPool-1 housekeeper] HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=11m30s713ms).
+2023-04-09 23:26:00,021 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:26:00.021229
+2023-04-09 23:26:00,028 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:26:00.028788
+2023-04-09 23:27:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:27:00.009016
+2023-04-09 23:27:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:27:00.014913
+2023-04-09 23:28:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:28:00.001036
+2023-04-09 23:28:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:28:00.016579
+2023-04-09 23:29:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:29:00.006173
+2023-04-09 23:29:00,019 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:29:00.019122
+2023-04-09 23:30:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:30:00.006843
+2023-04-09 23:30:00,015 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:30:00.015103
+2023-04-09 23:31:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:31:00.005262
+2023-04-09 23:31:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:31:00.009141
+2023-04-09 23:32:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:32:00.007151
+2023-04-09 23:32:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:32:00.013918
+2023-04-09 23:33:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:33:00.004939
+2023-04-09 23:33:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:33:00.009094
+2023-04-09 23:34:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:34:00.004884
+2023-04-09 23:34:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:34:00.011409
+2023-04-09 23:35:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:35:00.007108
+2023-04-09 23:35:00,020 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:35:00.020778
+2023-04-09 23:36:00,000 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:36:00.000380
+2023-04-09 23:36:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:36:00.012711
+2023-04-09 23:37:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:37:00.004509
+2023-04-09 23:37:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:37:00.007170
+2023-04-09 23:38:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:38:00.003768
+2023-04-09 23:38:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:38:00.007138
+2023-04-09 23:39:00,004 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:39:00.004907
+2023-04-09 23:39:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:39:00.011265
+2023-04-09 23:40:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:40:00.008532
+2023-04-09 23:40:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:40:00.014336
+2023-04-09 23:41:00,002 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:41:00.002734
+2023-04-09 23:41:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:41:00.006473
+2023-04-09 23:42:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:42:00.005273
+2023-04-09 23:42:00,014 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:42:00.014685
+2023-04-09 23:43:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:43:00.006119
+2023-04-09 23:43:00,013 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:43:00.013932
+2023-04-09 23:44:00,006 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:44:00.006085
+2023-04-09 23:44:00,011 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:44:00.011263
+2023-04-09 23:45:00,007 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:45:00.007537
+2023-04-09 23:45:00,016 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:45:00.016234
+2023-04-09 23:46:00,001 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:46:00.001719
+2023-04-09 23:46:00,009 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:46:00.009250
+2023-04-09 23:47:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:47:00.005302
+2023-04-09 23:47:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:47:00.010716
+2023-04-09 23:48:00,008 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:48:00.008783
+2023-04-09 23:48:00,018 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:48:00.018291
+2023-04-09 23:49:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:49:00.003829
+2023-04-09 23:49:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:49:00.010448
+2023-04-09 23:49:54,288 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 23:49:54,289 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown initiated...
+2023-04-09 23:49:54,291 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] HikariPool-1 - Shutdown completed.
+2023-04-09 23:49:56,587 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 35550 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-09 23:49:56,588 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-09 23:49:56,966 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-09 23:49:56,999 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-09 23:49:57,279 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-09 23:49:57,284 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-09 23:49:57,284 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-09 23:49:57,284 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-09 23:49:57,321 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-09 23:49:57,321 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 714 ms
+2023-04-09 23:49:57,524 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-09 23:49:57,677 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@1c135f63
+2023-04-09 23:49:57,679 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-09 23:49:57,689 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-09 23:49:58,162 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-09 23:49:58,595 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-09 23:49:58,725 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@7ec416a0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1cbb6037, org.springframework.security.web.context.SecurityContextHolderFilter@6e16fcaf, org.springframework.security.web.header.HeaderWriterFilter@1342c6e1, org.springframework.security.web.authentication.logout.LogoutFilter@7a9df9b2, com.yusuf.online.order.system.config.JwtAuthenticationFilter@471d6571, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4de3a1ca, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1f953e51, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2cfd91b9, org.springframework.security.web.session.SessionManagementFilter@2d5cb059, org.springframework.security.web.access.ExceptionTranslationFilter@3f41a1f3, org.springframework.security.web.access.intercept.AuthorizationFilter@77cac3b]
+2023-04-09 23:49:58,893 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-09 23:49:58,901 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-09 23:49:58,908 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.58 seconds (process running for 2.885)
+2023-04-09 23:50:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:50:00.005195
+2023-04-09 23:50:00,052 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:50:00.052596
+2023-04-09 23:50:02,753 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-2] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 23:50:02,754 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Initializing Servlet 'dispatcherServlet'
+2023-04-09 23:50:02,754 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-2] Completed initialization in 0 ms
+2023-04-09 23:51:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:51:00.005619
+2023-04-09 23:51:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:51:00.017270
+2023-04-09 23:52:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:52:00.005354
+2023-04-09 23:52:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:52:00.017644
+2023-04-09 23:53:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:53:00.005089
+2023-04-09 23:53:00,017 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:53:00.017582
+2023-04-09 23:54:00,003 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:54:00.003508
+2023-04-09 23:54:00,010 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:54:00.010127
+2023-04-09 23:54:59,981 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:54:59.981589
+2023-04-09 23:54:59,994 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:54:59.994048
+2023-04-09 23:55:59,999 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-09T23:55:59.999677
+2023-04-09 23:56:00,012 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-09T23:56:00.012495
