@@ -238,3 +238,50 @@
 2023-04-10 00:56:00,853 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-9] An error occurred while accepting the order. Error message Bu sipari? kabul edilemez. Çünkü siprai?i statüsü CANCELLED 'dir.
 2023-04-10 00:57:00,031 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T00:57:00.031474
 2023-04-10 00:57:00,038 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T00:57:00.038463
+2023-04-10 01:02:18,667 INFO o.s.b.StartupInfoLogger [main] Starting OnlineOrderSystemApplication using Java 19.0.1 with PID 38124 (/Users/yusufatalar/Desktop/OnlineOrderSystem/target/classes started by yusufatalar in /Users/yusufatalar/Desktop/OnlineOrderSystem)
+2023-04-10 01:02:18,668 INFO o.s.b.SpringApplication [main] No active profile set, falling back to 1 default profile: "default"
+2023-04-10 01:02:19,056 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-04-10 01:02:19,089 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 29 ms. Found 4 JPA repository interfaces.
+2023-04-10 01:02:19,377 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2023-04-10 01:02:19,382 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2023-04-10 01:02:19,382 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2023-04-10 01:02:19,382 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.5]
+2023-04-10 01:02:19,420 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2023-04-10 01:02:19,421 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 733 ms
+2023-04-10 01:02:19,624 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Starting...
+2023-04-10 01:02:19,783 INFO c.z.h.p.HikariPool [main] HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@7538cfe6
+2023-04-10 01:02:19,784 INFO c.z.h.HikariDataSource [main] HikariPool-1 - Start completed.
+2023-04-10 01:02:19,794 INFO o.h.e.j.d.i.DialectFactoryImpl [main] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2023-04-10 01:02:20,240 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-04-10 01:02:20,684 WARN o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration [main] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-04-10 01:02:20,820 INFO o.s.s.w.DefaultSecurityFilterChain [main] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6557d4c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@de4bee9, org.springframework.security.web.context.SecurityContextHolderFilter@3776c917, org.springframework.security.web.header.HeaderWriterFilter@2d95c3ef, org.springframework.security.web.authentication.logout.LogoutFilter@6453c126, com.yusuf.online.order.system.config.JwtAuthenticationFilter@634d56eb, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7b80be13, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@df80af2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@62509b77, org.springframework.security.web.session.SessionManagementFilter@71390c8, org.springframework.security.web.access.ExceptionTranslationFilter@15beb40b, org.springframework.security.web.access.intercept.AuthorizationFilter@5fb6fdb8]
+2023-04-10 01:02:20,989 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2023-04-10 01:02:20,997 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2023-04-10 01:02:21,005 INFO o.s.b.StartupInfoLogger [main] Started OnlineOrderSystemApplication in 2.599 seconds (process running for 2.919)
+2023-04-10 01:03:00,005 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job started. StartTime : 2023-04-10T01:03:00.005334
+2023-04-10 01:03:00,088 INFO c.y.o.o.s.c.s.JobService [scheduling-1] DeliverOrder job finished. EndTime : 2023-04-10T01:03:00.088721
+2023-04-10 01:03:02,178 INFO o.a.j.l.DirectJDKLog [http-nio-8080-exec-1] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-10 01:03:02,178 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2023-04-10 01:03:02,179 INFO o.s.w.s.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 0 ms
+2023-04-10 01:03:02,386 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-1] zafer@gmail.com user created.
+2023-04-10 01:03:02,616 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-3] zafer@gmail.com is authenticated.
+2023-04-10 01:03:02,676 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-4] 33 - ev product  is created
+2023-04-10 01:03:02,701 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-5] 33 - araba product  is created
+2023-04-10 01:03:02,724 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-6] 33 - bilgisayar product  is created
+2023-04-10 01:03:02,783 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-8] 33 - telefon product  is updated
+2023-04-10 01:03:02,830 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-10] 33 - telefon product  is deleted
+2023-04-10 01:03:02,955 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-3] osman@gmail.com user created.
+2023-04-10 01:03:03,060 INFO c.y.o.o.s.a.AuthenticationService [http-nio-8080-exec-4] osman@gmail.com is authenticated.
+2023-04-10 01:03:03,093 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] Order with 71 id is created
+2023-04-10 01:03:03,119 INFO c.y.o.o.s.c.s.SimpleProductService [http-nio-8080-exec-6] 33 - ev product  is updated
+2023-04-10 01:03:03,119 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-6] Order with 71 id is accepted
+2023-04-10 01:03:03,140 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-7] An error occurred while rejecting the order. Error message Bu sipari? reddedilemez. Çünkü siprai?i statüsü ACCEPTED 'dir.
+2023-04-10 01:03:03,161 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] An error occurred while canceling the order. Error message Bu sipari? iptal edilemez. Çünkü siprai?i statüsü ACCEPTED 'dir.
+2023-04-10 01:03:03,181 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-2] Order with 72 id is created
+2023-04-10 01:03:03,200 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-1] Order with 72 id is rejected
+2023-04-10 01:03:03,219 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-3] An error occurred while accepting the order. Error message This order cannot be accepted. Because the order status is REJECTED
+2023-04-10 01:03:03,241 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-5] An error occurred while canceling the order. Error message This order cannot be cancelled. Because the order status is REJECTED
+2023-04-10 01:03:03,263 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-7] Order with 73 id is created
+2023-04-10 01:03:03,286 INFO c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-9] Order with 73 id is cancelled
+2023-04-10 01:03:03,304 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-8] An error occurred while rejecting the order. Error message This order cannot be rejected. Because the order status is CANCELLED
+2023-04-10 01:03:03,323 ERROR c.y.o.o.s.c.s.SimpleOrderService [http-nio-8080-exec-2] An error occurred while accepting the order. Error message Bu sipari? kabul edilemez. Çünkü siprai?i statüsü CANCELLED 'dir.
