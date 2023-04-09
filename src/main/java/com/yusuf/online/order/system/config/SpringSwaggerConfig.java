@@ -15,8 +15,8 @@ public class SpringSwaggerConfig {
   @Bean
   public OpenAPI usersMicroserviceOpenAPI() {
     return new OpenAPI()
-        .info(new Info().title("Your API Title")
-            .description("Your API Description")
+        .info(new Info().title("OOP")
+            .description("Online Order System")
             .version("1.0"));
   }
 
