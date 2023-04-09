@@ -1,5 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
+import com.yusuf.online.order.system.core.config.Messages;
 import com.yusuf.online.order.system.core.entity.User;
 import com.yusuf.online.order.system.core.mapper.UserMapper;
 import com.yusuf.online.order.system.core.model.dto.UserDTO;
@@ -7,10 +8,11 @@ import com.yusuf.online.order.system.core.repository.UserRepository;
 import com.yusuf.online.order.system.core.service.base.UserService;
 import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
-
+@Slf4j
 @RequiredArgsConstructor
 @Service
 public class SimpleUserService implements UserService {
@@ -23,9 +25,11 @@ public class SimpleUserService implements UserService {
 
   @Override
   public UserDTO findUserByUserName(String username) {
-    final User user = userRepository.findByEmail(username).orElseThrow(
-        () -> new EntityNotFoundException(
-            String.format("%s kullanıcı adına sahip bir kullanıcı bulunamadı.", username)));
+    final User user = userRepository.findByEmail(username).orElseThrow(() -> {
+      final String messageForLocale = String.format(Messages.getMessageForLocale("user.not.found.exception"),username);
+      log.error("An error occurred while getting user by username. Error message : {}", messageForLocale);
+      throw  new EntityNotFoundException(messageForLocale);
+    });
     return mapper.convertToDTO(user);
   }
 
