@@ -1,8 +1,11 @@
 package com.yusuf.online.order.system.config;
 
 
+import com.yusuf.online.order.system.core.config.Messages;
 import com.yusuf.online.order.system.core.repository.UserRepository;
+import jakarta.persistence.EntityNotFoundException;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.authentication.AuthenticationManager;
@@ -13,7 +16,7 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-
+@Slf4j
 @Configuration
 @RequiredArgsConstructor
 public class ApplicationConfig {
@@ -23,8 +26,11 @@ public class ApplicationConfig {
   @Bean
   public UserDetailsService userDetailsService() {
     return username -> userRepository.findByEmail(username)
-        .orElseThrow(() -> new UsernameNotFoundException(String.format("%s User Not Found",username)));
-
+        .orElseThrow(() -> {
+          final String messageForLocale = String.format(Messages.getMessageForLocale("user.not.found.exception"),username);
+          log.error("An error occurred while getting user by username. Error message : {}", messageForLocale);
+          throw  new EntityNotFoundException(messageForLocale);
+        });
   }
   @Bean
   public AuthenticationProvider authenticationProvider() {

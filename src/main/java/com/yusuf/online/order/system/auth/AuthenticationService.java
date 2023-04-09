@@ -2,6 +2,7 @@ package com.yusuf.online.order.system.auth;
 
 
 import com.yusuf.online.order.system.config.JwtService;
+import com.yusuf.online.order.system.core.config.Messages;
 import com.yusuf.online.order.system.core.entity.User;
 import com.yusuf.online.order.system.core.enums.UserType;
 import com.yusuf.online.order.system.core.repository.UserRepository;
@@ -27,14 +28,14 @@ public class AuthenticationService {
   public AuthenticationResponse registerUser(UserRegisterRequest request) {
     if (repository.findByEmail(request.getEmail()).isPresent()) {
 
-      final String errorMessage = String.format("%s mail adresine kayıtlı bir kullanıcı mevcut!",
+      final String errorMessage = String.format(Messages.getMessageForLocale("user.exist.exception"),
           request.getEmail());
-      log.error("User can not created. Eroor Message : {}",errorMessage);
+      log.error("An error occurred while creating the user. Error Message : {}",errorMessage);
       throw new EntityExistsException(errorMessage);
     }
     if (UserType.SELLER.equals(request.getUserType()) && Objects.isNull(request.getBusinessName())){
-      final String errorMessage = "Satıcı kullanıcı kayıtları için Businnes Name zorunludur!";
-      log.error("User can not created. Eroor Message : {}",errorMessage);
+      final String errorMessage = Messages.getMessageForLocale(" mandatory.business.name.field.exception");
+      log.error("An error occurred while creating the user. Error Message : {}",errorMessage);
       throw new IllegalArgumentException(errorMessage);
     }
     User user = User.builder()
@@ -62,7 +63,7 @@ public class AuthenticationService {
     User user = repository.findByEmail(request.getEmail())
         .orElseThrow();
     String jwtToken = jwtService.generateToken(user);
-    log.debug("{} is authenticated.",user.getUsername());
+    log.info("{} is authenticated.",user.getUsername());
     return AuthenticationResponse.builder()
         .token(jwtToken)
         .build();

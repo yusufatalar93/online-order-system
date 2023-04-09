@@ -1,5 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
+import com.yusuf.online.order.system.core.config.Messages;
 import com.yusuf.online.order.system.core.entity.Order;
 import com.yusuf.online.order.system.core.enums.OrderStatus;
 import com.yusuf.online.order.system.core.mapper.OrderMapper;
@@ -38,31 +39,39 @@ public class SimpleOrderService implements OrderService {
   public OrderDTO createOrder(OrderDTO orderDTO) {
     final ProductDTO product = productService.getProductById(orderDTO.getProductId());
     if (product.getQuantity() < orderDTO.getQuantity()) {
-     final String errorMessage =  String.format("Yeterli miktarda ürün yok. Talep edilen : %s, Mevcut : %s",
+      final String errorMessage = String.format(
+          Messages.getMessageForLocale("not.enough.product.exception"),
           orderDTO.getQuantity(), product.getQuantity());
-      log.error("Order cannot be created. Error message {}",errorMessage);
+      log.error("An error occurred while creating the order. Error message : {}", errorMessage);
       throw new IllegalArgumentException(errorMessage);
     }
     final Order order = orderMapper.convertToEntity(orderDTO);
     order.setOrderStatus(OrderStatus.CREATED);
     final Order savedOrder = repository.save(order);
-    log.info("Order with {} id is created",savedOrder.getId());
+    log.info("Order with {} id is created", savedOrder.getId());
     return orderMapper.convertToDTO(savedOrder);
   }
 
   @Override
   public void cancelOrder(Integer orderId) {
     Order order = repository.findById(orderId).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait sipariş bulunamadı!")));
+        () -> {
+          final String errorMessage = Messages.getMessageForLocale("order.not.found.exception");
+          log.error("An error occurred while canceling the order. Error message : {}",
+              errorMessage);
+          throw new EntityNotFoundException(
+              String.format(errorMessage, orderId));
+        });
 
     if (order.getOrderStatus().equals(OrderStatus.CREATED)) {
       order.setOrderStatus(OrderStatus.CANCELLED);
       repository.save(order);
-      log.info("Order with {} id is cancelled",order.getId());
+      log.info("Order with {} id is cancelled", order.getId());
     } else {
-      final String errorMessage = String.format("Bu sipariş iptal edilemez. Çünkü sipraişi statüsü %s 'dir",
+      final String errorMessage = String.format(
+          Messages.getMessageForLocale("order.can.not.be.canceled.exception"),
           order.getOrderStatus());
-      log.error("Order cannot be accepted. Error message {}",errorMessage);
+      log.error("An error occurred while canceling the order. Error message {}", errorMessage);
       throw new RuntimeException(errorMessage);
     }
   }
@@ -78,26 +87,34 @@ public class SimpleOrderService implements OrderService {
   @Override
   public void acceptOrder(Integer orderId) {
     Order order = repository.findById(orderId).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait sipariş bulunamadı!")));
+        () -> {
+          final String errorMessage = Messages.getMessageForLocale("order.not.found.exception");
+          log.error("An error occurred while accepting the order. Error message : {}",
+              errorMessage);
+          throw new EntityNotFoundException(
+              String.format(errorMessage, orderId));
+        });
     if (order.getOrderStatus().equals(OrderStatus.CREATED)) {
       ProductDTO product = productService.getProductById(order.getProductId());
       final long productQuantity = product.getQuantity();
       final long orderQuantity = order.getQuantity();
       if (orderQuantity > productQuantity) {
-        final String errorMessage = String.format("Yeterli miktarda ürün yok. Talep edilen : %s, Mevcut : %s",
-        orderQuantity, productQuantity);
-        log.error("Order cannot be accepted. Error message {}",errorMessage);
+        final String errorMessage = String.format(
+            Messages.getMessageForLocale("not.enough.product.exception"),
+            orderQuantity, productQuantity);
+        log.error("An error occurred while accepting the order. Error message : {}", errorMessage);
         throw new IllegalArgumentException(errorMessage);
       } else {
         order.setOrderStatus(OrderStatus.ACCEPTED);
         product.setQuantity(productQuantity - orderQuantity);
         productService.update(product);
-        log.info("Order with {} id is accepted",order.getId());
+        log.info("Order with {} id is accepted", order.getId());
       }
     } else {
-      final String errorMessage = String.format("Bu sipariş kabul edilemez. Çünkü sipraişi statüsü %s 'dir",
+      final String errorMessage = String.format(
+          Messages.getMessageForLocale("order.can.not.be.accepted.exception"),
           order.getOrderStatus());
-      log.error("Order cannot be accepted. Error message {}",errorMessage);
+      log.error("An error occurred while accepting the order. Error message {}", errorMessage);
       throw new RuntimeException(errorMessage);
     }
   }
@@ -105,15 +122,22 @@ public class SimpleOrderService implements OrderService {
   @Override
   public void rejectOrder(Integer orderId) {
     Order order = repository.findById(orderId).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait sipariş bulunamadı!",orderId)));
+        () -> {
+          final String errorMessage = Messages.getMessageForLocale("order.not.found.exception");
+          log.error("An error occurred while rejecting the order. Error message : {}",
+              errorMessage);
+          throw new EntityNotFoundException(
+              String.format(errorMessage, orderId));
+        });
     if (order.getOrderStatus().equals(OrderStatus.CREATED)) {
       order.setOrderStatus(OrderStatus.REJECTED);
       repository.save(order);
-      log.info("Order with {} id is rejected",order.getId());
+      log.info("Order with {} id is rejected", order.getId());
     } else {
-      final String errorMessage = String.format("Bu sipariş reddedilemez. Çünkü sipraiş statüsü %s 'dir",
-      order.getOrderStatus());
-      log.error("Order cannot be rejected. Error message {}",errorMessage);
+      final String errorMessage = String.format(
+          Messages.getMessageForLocale("order.can.not.be.rejected.exception"),
+          order.getOrderStatus());
+      log.error("An error occurred while rejecting the order. Error message {}", errorMessage);
       throw new RuntimeException(errorMessage);
     }
   }
@@ -133,7 +157,7 @@ public class SimpleOrderService implements OrderService {
         order.setOrderStatus(OrderStatus.DELIVERED);
       }
       repository.save(order);
-      log.info("Order with {} id is delivered",order.getId());
+      log.info("Order with {} id is delivered", order.getId());
     }
   }
 

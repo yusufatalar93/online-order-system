@@ -1,5 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
+import com.yusuf.online.order.system.core.config.Messages;
 import com.yusuf.online.order.system.core.entity.Product;
 import com.yusuf.online.order.system.core.mapper.ProductMapper;
 import com.yusuf.online.order.system.core.model.dto.ProductDTO;
@@ -30,10 +31,8 @@ public class SimpleProductService implements ProductService {
   public ProductDTO save(ProductDTO productDTO) {
     final Integer currentUserId = userService.getCurruntUser().getId();
     if (repository.existsByNameAndSellerId(productDTO.getName(), currentUserId)) {
-      final String errorMessage = String.format(
-          "%s ürünü için ürün kaydı mevcuttur. Yeni kayıt atılamaz.",
-          productDTO.getName());
-      log.error("Product cannot be created. Error message : {}", errorMessage);
+      final String errorMessage =Messages.getMessageForLocale("product.exist.exception");
+      log.error("An error occurred while creating the product. Error message : {}", errorMessage);
       throw new EntityExistsException(errorMessage);
     }
     final Product product = productMapper.convertToEntity(productDTO);
@@ -48,16 +47,18 @@ public class SimpleProductService implements ProductService {
     final Integer currentUserId = userService.getCurruntUser().getId();
     final Product product = repository.findById(productDTO.getId()).map(p -> {
       if (!Objects.equals(currentUserId, p.getSellerId())) {
-        final String errorMessage =
-            "Güncellemek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü güncelleyebilir.";
-        log.error("Product cannot be created.Error message : {}", errorMessage);
+        final String errorMessage = Messages.getMessageForLocale("product.owner.exception");
+        log.error("An error occurred while updating the product. Error message : {}", errorMessage);
         throw new IllegalArgumentException(errorMessage);
       }
       productMapper.updateEntity(productDTO, p);
       return p;
-    }).orElseThrow(() -> new EntityNotFoundException(
-        String.format("%s ID'ye ait ürün kaydı bulunamadığından güncelleme yapılamadı.",
-            productDTO.getId())));
+    }).orElseThrow(() -> {
+      final String messageForLocale = Messages.getMessageForLocale("product.not.found.exception");
+      log.error("An error occurred while updating the product. Error message : {}", messageForLocale);
+      throw  new EntityNotFoundException(
+          String.format(messageForLocale, productDTO.getId()));
+    });
     final Product savedProduct = repository.save(product);
     log.info("{} - {} product  is updated", savedProduct.getSellerId(), savedProduct.getName());
     return productMapper.convertToDTO(savedProduct);
@@ -67,13 +68,14 @@ public class SimpleProductService implements ProductService {
   public void deleteByProductId(Integer id) {
     final Integer currentUserId = userService.getCurruntUser().getId();
     final Product product = repository.findById(id)
-        .orElseThrow(() -> new EntityNotFoundException(
-            String.format(
-                "%s ID'ye ait ürün kaydı bulunamadığından silme işlemi gerçekleştirilemedi.", id)));
+        .orElseThrow(() -> {
+          final String messageForLocale = Messages.getMessageForLocale("product.not.found.exception");
+         throw  new EntityNotFoundException(
+              String.format(messageForLocale, id));
+        });
     if (!Objects.equals(currentUserId, product.getSellerId())) {
-
-      final String errorMessage = "Silmek istenilen ürün size ait değil. Herkes sadece kendine ait ürünü silebilir.";
-      log.error("Product cannot be deleted. Error message : {}", errorMessage);
+      final String errorMessage = Messages.getMessageForLocale("product.owner.exception");
+      log.error("An error occurred while deleting the product. Error message : {}", errorMessage);
       throw new IllegalArgumentException(errorMessage);
     }
     repository.delete(product);
@@ -89,8 +91,12 @@ public class SimpleProductService implements ProductService {
 
   @Override
   public ProductDTO getProductById(Integer id) {
+
     final Product product = repository.findById(id).orElseThrow(
-        () -> new EntityNotFoundException(String.format("%s ID'ye ait ürün bulunamadı!", id)));
+        () -> {
+          final String messageForLocale = Messages.getMessageForLocale("product.not.found.exception");
+          throw new EntityNotFoundException(String.format(messageForLocale, id));
+        });
     return productMapper.convertToDTO(product);
   }
 
