@@ -4,13 +4,14 @@ package com.yusuf.online.order.system.auth.service;
 import com.yusuf.online.order.system.auth.model.AuthenticationRequest;
 import com.yusuf.online.order.system.auth.model.AuthenticationResponse;
 import com.yusuf.online.order.system.auth.model.UserRegisterRequest;
-import com.yusuf.online.order.system.core.service.util.Messages;
+import com.yusuf.online.order.system.auth.model.VerificationUrlModel;
 import com.yusuf.online.order.system.core.entity.ConfirmationToken;
 import com.yusuf.online.order.system.core.entity.User;
 import com.yusuf.online.order.system.core.enums.UserType;
 import com.yusuf.online.order.system.core.repository.ConfirmationTokenRepository;
 import com.yusuf.online.order.system.core.repository.UserRepository;
 import com.yusuf.online.order.system.core.service.EmailService;
+import com.yusuf.online.order.system.core.service.util.Messages;
 import jakarta.persistence.EntityExistsException;
 import java.util.Objects;
 import java.util.Optional;
@@ -37,7 +38,7 @@ public class AuthenticationService {
 
   private final EmailService emailService;
 
-  public String registerUser(UserRegisterRequest request) {
+  public VerificationUrlModel registerUser(UserRegisterRequest request) {
     final Optional<User> userByMailAddress = repository.findByEmail(request.getEmail());
     if (userByMailAddress.isPresent()) {
       final String errorMessage;
@@ -82,8 +83,7 @@ public class AuthenticationService {
     emailService.sendEmail(mailMessage);
 
     System.out.println("Confirmation Token: " + confirmationToken.getConfirmationToken());
-
-    return link;
+    return new VerificationUrlModel(link);
 
   }
 
@@ -117,8 +117,8 @@ public class AuthenticationService {
       log.info(successMessage);
       return ResponseEntity.ok(successMessage);
     }
-    final String failMessage = String.format(
-        Messages.getMessageForLocale("fail.email.verification"), email);
+    final String failMessage =
+        Messages.getMessageForLocale("fail.email.verification");
     log.error(failMessage);
     return ResponseEntity.badRequest().body(failMessage);
   }

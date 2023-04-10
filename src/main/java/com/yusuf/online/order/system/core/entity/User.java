@@ -76,6 +76,6 @@ public class User extends BaseEntity<String> implements UserDetails {
 
   @Override
   public boolean isEnabled() {
-    return true;
+    return enabled;
   }
 }

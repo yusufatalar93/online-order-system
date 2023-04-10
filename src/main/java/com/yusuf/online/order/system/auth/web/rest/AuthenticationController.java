@@ -2,6 +2,7 @@ package com.yusuf.online.order.system.auth.web.rest;
 
 import com.yusuf.online.order.system.auth.model.AuthenticationRequest;
 import com.yusuf.online.order.system.auth.model.AuthenticationResponse;
+import com.yusuf.online.order.system.auth.model.VerificationUrlModel;
 import com.yusuf.online.order.system.auth.service.AuthenticationService;
 import com.yusuf.online.order.system.auth.model.UserRegisterRequest;
 import jakarta.validation.Valid;
@@ -21,8 +22,10 @@ public class AuthenticationController {
 
   private final AuthenticationService service;
 
+
+  // Burada url dönemeyecektim. Postmanden otomatik test etmek için ekledim.
   @PostMapping("/register")
-  public ResponseEntity<String> register(
+  public ResponseEntity<VerificationUrlModel> register(
       @Valid @RequestBody UserRegisterRequest request
   ) {
     return ResponseEntity.ok(service.registerUser(request));

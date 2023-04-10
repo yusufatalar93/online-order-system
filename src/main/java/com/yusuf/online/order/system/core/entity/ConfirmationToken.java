@@ -24,8 +24,8 @@ public class ConfirmationToken extends BaseEntity<String>{
 
 
   @Id
-  @GeneratedValue(strategy = GenerationType.AUTO)
-  @Column(name="token_id")
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "ID")
   private Long tokenId;
 
   @Column(name="confirmation_token")
@@ -38,5 +38,6 @@ public class ConfirmationToken extends BaseEntity<String>{
 
   public ConfirmationToken(User user) {
     this.user = user;
+    confirmationToken = UUID.randomUUID().toString();
   }
 }

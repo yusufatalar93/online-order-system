@@ -40,9 +40,8 @@ public class ApplicationConfig {
           });
 
       if (!user.isEnabled()) {
-        String errorMessage = String.format(
-            Messages.getMessageForLocale("user.not.verified.exception"),
-            username);
+        String errorMessage = String.format(Messages.getMessageForLocale("user.not.verified.exception"),username)
+            ;
         log.error(errorMessage);
         throw new RuntimeException(errorMessage);
       }
