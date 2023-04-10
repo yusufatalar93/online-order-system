@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.auth;
+package com.yusuf.online.order.system.auth.model;
 
 import com.yusuf.online.order.system.core.enums.UserType;
 import jakarta.validation.constraints.Email;

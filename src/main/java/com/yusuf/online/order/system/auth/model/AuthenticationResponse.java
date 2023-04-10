@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.auth;
+package com.yusuf.online.order.system.auth.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.auth;
+package com.yusuf.online.order.system.auth.model;
 
 import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;

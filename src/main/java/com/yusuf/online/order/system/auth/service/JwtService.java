@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.config;
+package com.yusuf.online.order.system.auth.service;
 
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;

@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.config;
+package com.yusuf.online.order.system.auth.config;
 
 
 import com.yusuf.online.order.system.core.config.Messages;
@@ -25,7 +25,7 @@ public class ApplicationConfig {
 
   @Bean
   public UserDetailsService userDetailsService() {
-    return username -> userRepository.findByEmail(username)
+    return username -> userRepository.findByEmailAndEnabled(username,true)
         .orElseThrow(() -> {
           final String messageForLocale = String.format(Messages.getMessageForLocale("user.not.found.exception"),username);
           log.error("An error occurred while getting user by username. Error message : {}", messageForLocale);

@@ -25,7 +25,7 @@ public class SimpleUserService implements UserService {
 
   @Override
   public UserDTO findUserByUserName(String username) {
-    final User user = userRepository.findByEmail(username).orElseThrow(() -> {
+    final User user = userRepository.findByEmailAndEnabled(username,true).orElseThrow(() -> {
       final String messageForLocale = String.format(Messages.getMessageForLocale("user.not.found.exception"),username);
       log.error("An error occurred while getting user by username. Error message : {}", messageForLocale);
       throw  new EntityNotFoundException(messageForLocale);

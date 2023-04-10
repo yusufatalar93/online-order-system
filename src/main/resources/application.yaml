@@ -11,6 +11,20 @@ spring:
         format_sql: true
     database: mysql
     database-platform: org.hibernate.dialect.MySQL8Dialect
+  ###### Email Properties ######
+  #smtp mail properties
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: yussufatalarr@gmail.com
+    password: ytqniyqcmnubzjsu
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+
 
 server:
   port: 8080
