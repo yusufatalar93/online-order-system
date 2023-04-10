@@ -4,7 +4,7 @@ package com.yusuf.online.order.system.auth.service;
 import com.yusuf.online.order.system.auth.model.AuthenticationRequest;
 import com.yusuf.online.order.system.auth.model.AuthenticationResponse;
 import com.yusuf.online.order.system.auth.model.UserRegisterRequest;
-import com.yusuf.online.order.system.core.config.Messages;
+import com.yusuf.online.order.system.core.service.util.Messages;
 import com.yusuf.online.order.system.core.entity.ConfirmationToken;
 import com.yusuf.online.order.system.core.entity.User;
 import com.yusuf.online.order.system.core.enums.UserType;
@@ -109,7 +109,7 @@ public class AuthenticationService {
         confirmationToken);
     String email = "";
     if (token != null) {
-      email = token.getUserEntity().getEmail();
+      email = token.getUser().getEmail();
       User user = repository.findByEmailIgnoreCase(email);
       user.setEnabled(true);
       repository.save(user);

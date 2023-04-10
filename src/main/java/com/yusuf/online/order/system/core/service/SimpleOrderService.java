@@ -1,6 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
-import com.yusuf.online.order.system.core.config.Messages;
+import com.yusuf.online.order.system.core.service.util.Messages;
 import com.yusuf.online.order.system.core.entity.Order;
 import com.yusuf.online.order.system.core.enums.OrderStatus;
 import com.yusuf.online.order.system.core.mapper.OrderMapper;

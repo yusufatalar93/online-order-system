@@ -1,6 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
-import com.yusuf.online.order.system.core.config.Messages;
+import com.yusuf.online.order.system.core.service.util.Messages;
 import com.yusuf.online.order.system.core.entity.User;
 import com.yusuf.online.order.system.core.mapper.UserMapper;
 import com.yusuf.online.order.system.core.model.dto.UserDTO;

@@ -36,4 +36,7 @@ public class ConfirmationToken extends BaseEntity<String>{
   @JoinColumn(nullable = false, name = "user_id")
   private User user;
 
+  public ConfirmationToken(User user) {
+    this.user = user;
+  }
 }
