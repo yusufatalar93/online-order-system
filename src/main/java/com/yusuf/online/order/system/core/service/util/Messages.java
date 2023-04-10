@@ -1,4 +1,4 @@
-package com.yusuf.online.order.system.core.config;
+package com.yusuf.online.order.system.core.service.util;
 
 import java.util.Locale;
 import java.util.ResourceBundle;

@@ -1,5 +1,6 @@
-package com.yusuf.online.order.system.config;
+package com.yusuf.online.order.system.auth.config;
 
+import com.yusuf.online.order.system.auth.service.JwtAuthenticationFilter;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

@@ -1,6 +1,6 @@
 package com.yusuf.online.order.system.core.service;
 
-import com.yusuf.online.order.system.core.config.Messages;
+import com.yusuf.online.order.system.core.service.util.Messages;
 import com.yusuf.online.order.system.core.entity.User;
 import com.yusuf.online.order.system.core.mapper.UserMapper;
 import com.yusuf.online.order.system.core.model.dto.UserDTO;
@@ -25,7 +25,7 @@ public class SimpleUserService implements UserService {
 
   @Override
   public UserDTO findUserByUserName(String username) {
-    final User user = userRepository.findByEmail(username).orElseThrow(() -> {
+    final User user = userRepository.findByEmailAndEnabled(username,true).orElseThrow(() -> {
       final String messageForLocale = String.format(Messages.getMessageForLocale("user.not.found.exception"),username);
       log.error("An error occurred while getting user by username. Error message : {}", messageForLocale);
       throw  new EntityNotFoundException(messageForLocale);

@@ -10,13 +10,11 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import java.util.Collection;
-import java.util.List;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
 import org.springframework.security.core.userdetails.UserDetails;
 
 @Data
@@ -24,7 +22,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 @AllArgsConstructor
 @Builder
 @Entity
-public class User  extends BaseEntity<String> implements UserDetails {
+public class User extends BaseEntity<String> implements UserDetails {
 
   @Id
   @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -38,12 +36,13 @@ public class User  extends BaseEntity<String> implements UserDetails {
   @Column(name = "BUSINESS_NAME")
   private String businessName;
 
-  @Column(name = "ADDRESS" ,columnDefinition = "TEXT")
+  @Column(name = "ADDRESS", columnDefinition = "TEXT")
   private String address;
   @Enumerated(EnumType.STRING)
   @Column(name = "USER_TYPE")
   private UserType userType;
-
+  @Column(name = "ENABLED")
+  private boolean enabled;
 
   @Override
   public Collection<? extends GrantedAuthority> getAuthorities() {
@@ -77,6 +76,6 @@ public class User  extends BaseEntity<String> implements UserDetails {
 
   @Override
   public boolean isEnabled() {
-    return true;
+    return enabled;
   }
 }
